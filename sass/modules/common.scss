@@ -1,0 +1,24 @@
+//字体颜色定义
+$black: #3c3c3c;
+$cgray: #666;
+$gray-light: #999;
+//背景色定义
+$bgray: #f3f3f3;
+$byellow: #ff6e1f;
+
+//边框颜色定义
+$border-f1: #f1f1f1;
+
+
+
+.mod-full{
+	width:100%;
+	backgound-color: #fff;
+}
+.mod-gray{
+	backgound-color: $bgray;
+}
+.grid-m1210{
+	width:1210px;
+	margin:0 auto;
+}

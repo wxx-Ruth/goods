@@ -1,0 +1,19 @@
+{
+  "name": "goods",
+  "version": "1.0.0",
+  "description": "goods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wxx-Ruth/goods.git"
+  },
+  "author": "wangxinxiao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wxx-Ruth/goods/issues"
+  },
+  "homepage": "https://github.com/wxx-Ruth/goods#readme"
+}
