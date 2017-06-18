@@ -1,1 +1,6 @@
-@import 'common';
+@import 'normalize.css';
+@import '../modules/common';
+@import '../modules/top';
+@import '../modules/header';
+@import '../modules/indexList';
+@import '../modules/bottom';

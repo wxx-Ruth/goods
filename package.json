@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/wxx-Ruth/goods/issues"
   },
-  "homepage": "https://github.com/wxx-Ruth/goods#readme"
+  "homepage": "https://github.com/wxx-Ruth/goods#readme",
+  "devDependencies": {
+    "gulp-sass": "^3.1.0"
+  }
 }

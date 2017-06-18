@@ -1,0 +1,25 @@
+.top-left{
+    font-size: 13px;
+    color: #fd6f1f;
+    float: left;
+    span{
+        border-right: 1px solid $gray-light;
+        padding-right: 16px;
+        display: inline-block;
+    }
+    .logo-out{
+        color: $gray-light;
+        padding-left: 16px;
+    }
+ }
+.top-right{
+    float: right;
+    li{
+        float: left;
+        padding: 0 15px;
+        border-right: 1px solid $gray-light;
+        a{
+            color: $gray-light;
+        }
+    }
+}

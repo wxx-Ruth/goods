@@ -1,0 +1,41 @@
+.footer-main{
+    padding: 25px 45px 0;
+    margin-right: -20px;
+
+}
+.qrcode-lr{
+    margin: 20px 40px 15px 30px;
+    img{
+        width: 120px;
+        height: 120px;
+    }
+    .qrcode-info{
+        margin-left: 28px;
+        margin-top: 36px;
+        color: $black;
+        span{
+            font-size: 18px;
+        }
+        p{
+            color: $gray-light;
+        }
+    }
+}
+.links{
+    width: 428px;
+    border-right: 1px solid #d7d7d7;
+    padding: 30px 0 45px;
+    a{
+        display: inline-block;
+        color: $black;
+        margin-right: 68px;
+        margin-bottom: 10px;
+    }
+}
+.copyright{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    color: $gray-light;
+    font-size: $font-size-s;
+}

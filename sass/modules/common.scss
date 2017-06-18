@@ -2,6 +2,12 @@
 $black: #3c3c3c;
 $cgray: #666;
 $gray-light: #999;
+$yellow02: #ff341c;
+$red01: #ea0b0b;
+// 字体
+$font-family: '"Microsoft YaHei", sans-serif';
+$font-size: 14px;
+$font-size-s: 13px;
 //背景色定义
 $bgray: #f3f3f3;
 $byellow: #ff6e1f;
@@ -9,16 +15,84 @@ $byellow: #ff6e1f;
 //边框颜色定义
 $border-f1: #f1f1f1;
 
-
-
+@font-face {
+  font-family: 'iconfont';  /* project id 156314 */
+  src: url('http://at.alicdn.com/t/font_m4uotr2h0ews714i.eot');
+  src: url('http://at.alicdn.com/t/font_m4uotr2h0ews714i.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_m4uotr2h0ews714i.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_m4uotr2h0ews714i.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_m4uotr2h0ews714i.svg#iconfont') format('svg');
+}
+.iconfont{
+	font-family: 'iconfont'!important;
+    font-size: 24px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+body{
+	font-size: 14px;
+}
+// 共用
 .mod-full{
-	width:100%;
-	backgound-color: #fff;
+	width: 100%;
+	background-color: #fff;
 }
 .mod-gray{
-	backgound-color: $bgray;
+	background-color: $bgray;
 }
 .grid-m1210{
-	width:1210px;
-	margin:0 auto;
+	width: 1210px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ptb10{
+	padding:  10px 0;
+}
+.pt15{
+	padding-top: 15px;
+}
+.pt20{
+	padding-top: 20px;
+}
+.pt30{
+	padding-top: 30px;
+}
+.pt25b10{
+	padding: 25px 0 15px 0;
+}
+.pt25b75{
+	padding: 25px 0 75px 0;
+}
+
+.mb25{
+	margin-bottom: 25px;
+}
+.fr{
+	float: right;
+}
+.fl{
+	float: left;
+}
+.cf:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.cf {
+  zoom: 1;
+}
+.ff-ss{
+	font-family: 'STFangsong, SimSun';
+	font-size: 13px;
+	line-height: 13px;
+}
+
+@mixin t-rotate($deg: 45deg){
+	transform: rotate($deg);
+	-ms-transform: rotate($deg); 	/* IE 9 */
+	-moz-transform: rotate($deg); 	/* Firefox */
+	-webkit-transform: rotate($deg); /* Safari 和 Chrome */
 }
