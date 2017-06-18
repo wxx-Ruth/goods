@@ -42,7 +42,7 @@ body {
   padding-top: 30px; }
 
 .pt25b10 {
-  padding: 25px 0 15px 0; }
+  padding: 25px 0 10px 0; }
 
 .pt25b75 {
   padding: 25px 0 75px 0; }
@@ -78,6 +78,11 @@ body {
     border-right: 1px solid #999;
     padding-right: 16px;
     display: inline-block; }
+  .top-left .login {
+    color: #ff6e1f;
+    margin-right: 10px; }
+  .top-left .free-regist {
+    color: #666; }
   .top-left .logo-out {
     color: #999;
     padding-left: 16px; }
@@ -87,7 +92,8 @@ body {
   .top-right li {
     float: left;
     padding: 0 15px;
-    border-right: 1px solid #999; }
+    border-right: 1px solid #999;
+    margin-right: -1px; }
     .top-right li a {
       color: #999; }
 
@@ -108,7 +114,7 @@ body {
     /* Safari 和 Chrome */
     position: absolute;
     left: 10px;
-    top: 15px;
+    top: 18px;
     font-size: 30px; }
   .search-box .search-input {
     border: 2px solid #ff6e1f;
@@ -146,16 +152,30 @@ body {
     margin-top: 8px;
     width: 54px; }
 
-.nav {
+.nav-list {
   overflow: hidden;
   font-size: 16px;
-  line-height: 16px; }
-  .nav li {
-    float: left;
-    padding: 0 20px;
-    border-right: 1px solid #dcdbdb; }
-    .nav li a {
-      color: #3c3c3c; }
+  line-height: 16px;
+  margin: 20px 0 10px; }
+  .nav-list li {
+    float: left; }
+    .nav-list li a {
+      margin: 10px 8px 0;
+      color: #3c3c3c;
+      display: inline-block;
+      padding: 6px 12px; }
+      .nav-list li a.current {
+        color: #ff6e1f; }
+      .nav-list li a:hover {
+        background: #ff6e1f;
+        color: #fff;
+        border-radius: 2px; }
+    .nav-list li .line {
+      width: 2px;
+      height: 15px;
+      background-color: #dcdbdb;
+      display: inline-block;
+      vertical-align: middle; }
 
 .title-h {
   margin-left: 15px;
@@ -260,3 +280,31 @@ body {
   padding-bottom: 35px;
   color: #999;
   font-size: 13px; }
+
+.sidebar {
+  background-color: #fff;
+  font-family: 'STFangsong, SimSun'; }
+  .sidebar .item {
+    display: block;
+    width: 76px;
+    border: 1px solid #efefef;
+    color: #666;
+    text-align: center;
+    padding: 10px 0 8px; }
+    .sidebar .item .iconfont {
+      display: block;
+      font-size: 38px;
+      line-height: 38px; }
+    .sidebar .item .icon-go-top {
+      font-size: 24px; }
+    .sidebar .item.current, .sidebar .item:hover {
+      color: #ff6e1f;
+      border-color: #ff6e1f; }
+  .sidebar .go-top {
+    background-color: #e7e7e7; }
+
+.side-fixed {
+  position: fixed;
+  top: 200px;
+  right: 10px;
+  z-index: 10; }

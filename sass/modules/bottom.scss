@@ -39,3 +39,37 @@
     color: $gray-light;
     font-size: $font-size-s;
 }
+.sidebar{
+    background-color: #fff;
+    font-family: 'STFangsong, SimSun';
+    .item{
+        display: block;
+        width: 76px;
+        border: 1px solid #efefef;
+        color: $cgray;
+        text-align: center;
+        padding: 10px 0 8px; 
+        .iconfont{
+            display: block;
+            font-size: 38px;
+            line-height: 38px;
+        }
+        .icon-go-top{
+            font-size: 24px;
+        }
+        &.current, &:hover{
+            color: $byellow;
+            border-color: $byellow;
+        }
+    }
+    .go-top{
+        background-color: #e7e7e7;
+    }
+ 
+}
+.side-fixed{
+    position: fixed;
+    top: 200px;
+    right: 10px;
+    z-index: 10;
+}

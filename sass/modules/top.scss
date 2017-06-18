@@ -7,6 +7,13 @@
         padding-right: 16px;
         display: inline-block;
     }
+    .login{
+        color: $byellow;
+        margin-right: 10px;
+    }
+    .free-regist{
+        color: $cgray;
+    }
     .logo-out{
         color: $gray-light;
         padding-left: 16px;
@@ -18,6 +25,7 @@
         float: left;
         padding: 0 15px;
         border-right: 1px solid $gray-light;
+        margin-right: -1px;
         a{
             color: $gray-light;
         }
