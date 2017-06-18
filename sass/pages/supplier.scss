@@ -1,0 +1,17 @@
+@import 'normalize.css';
+@import '../modules/common';
+@import '../modules/top';
+@import '../modules/header';
+@import '../modules/indexList';
+@import '../modules/bottom';
+.all-goods{
+    li{
+        clear: left;
+        .img,.info{
+            float: left;
+        }
+      .info{
+          margin-left: 45px;
+      }
+    }
+}
