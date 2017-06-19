@@ -31,6 +31,10 @@
         margin-right: 68px;
         margin-bottom: 10px;
     }
+    .f-16{
+        font-size: $font-size-m;
+        margin-right: 60px;
+    }
 }
 .copyright{
     text-align: center;
@@ -69,7 +73,7 @@
 }
 .side-fixed{
     position: fixed;
-    top: 200px;
-    right: 10px;
+    bottom: 0px;
+    right: 0px;
     z-index: 10;
 }

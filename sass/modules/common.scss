@@ -8,6 +8,7 @@ $red01: #ea0b0b;
 $font-family: '"Microsoft YaHei", sans-serif';
 $font-size: 14px;
 $font-size-s: 13px;
+$font-size-m: 16px;
 //背景色定义
 $bgray: #f3f3f3;
 $byellow: #ff6e1f;
@@ -17,11 +18,11 @@ $border-f1: #f1f1f1;
 
 @font-face {
   font-family: 'iconfont';  /* project id 156314 */
-  src: url('http://at.alicdn.com/t/font_m4uotr2h0ews714i.eot');
-  src: url('http://at.alicdn.com/t/font_m4uotr2h0ews714i.eot?#iefix') format('embedded-opentype'),
-  url('http://at.alicdn.com/t/font_m4uotr2h0ews714i.woff') format('woff'),
-  url('http://at.alicdn.com/t/font_m4uotr2h0ews714i.ttf') format('truetype'),
-  url('http://at.alicdn.com/t/font_m4uotr2h0ews714i.svg#iconfont') format('svg');
+  src: url('http://at.alicdn.com/t/font_avj581f41wuvunmi.eot');
+  src: url('http://at.alicdn.com/t/font_avj581f41wuvunmi.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_avj581f41wuvunmi.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_avj581f41wuvunmi.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_avj581f41wuvunmi.svg#iconfont') format('svg');
 }
 .iconfont{
 	font-family: 'iconfont'!important;
@@ -33,7 +34,9 @@ $border-f1: #f1f1f1;
 }
 body{
 	font-size: 14px;
+	font-family: Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
 }
+
 // 共用
 .mod-full{
 	width: 100%;
@@ -85,7 +88,6 @@ body{
   zoom: 1;
 }
 .ff-ss{
-	font-family: 'STFangsong, SimSun';
 	font-size: 13px;
 	line-height: 13px;
 }

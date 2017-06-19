@@ -3,8 +3,8 @@
 @font-face {
   font-family: 'iconfont';
   /* project id 156314 */
-  src: url("http://at.alicdn.com/t/font_m4uotr2h0ews714i.eot");
-  src: url("http://at.alicdn.com/t/font_m4uotr2h0ews714i.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_m4uotr2h0ews714i.woff") format("woff"), url("http://at.alicdn.com/t/font_m4uotr2h0ews714i.ttf") format("truetype"), url("http://at.alicdn.com/t/font_m4uotr2h0ews714i.svg#iconfont") format("svg"); }
+  src: url("http://at.alicdn.com/t/font_avj581f41wuvunmi.eot");
+  src: url("http://at.alicdn.com/t/font_avj581f41wuvunmi.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_avj581f41wuvunmi.woff") format("woff"), url("http://at.alicdn.com/t/font_avj581f41wuvunmi.ttf") format("truetype"), url("http://at.alicdn.com/t/font_avj581f41wuvunmi.svg#iconfont") format("svg"); }
 
 .iconfont {
   font-family: "iconfont" !important;
@@ -15,7 +15,8 @@
   -moz-osx-font-smoothing: grayscale; }
 
 body {
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans; }
 
 .mod-full {
   width: 100%;
@@ -66,7 +67,6 @@ body {
   zoom: 1; }
 
 .ff-ss {
-  font-family: 'STFangsong, SimSun';
   font-size: 13px;
   line-height: 13px; }
 
@@ -273,6 +273,9 @@ body {
     color: #3c3c3c;
     margin-right: 68px;
     margin-bottom: 10px; }
+  .links .f-16 {
+    font-size: 16px;
+    margin-right: 60px; }
 
 .copyright {
   text-align: center;
@@ -305,8 +308,8 @@ body {
 
 .side-fixed {
   position: fixed;
-  top: 200px;
-  right: 10px;
+  bottom: 0px;
+  right: 0px;
   z-index: 10; }
 
 .all-goods li {
