@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(normalize.css);
 @font-face {
   font-family: 'iconfont';
@@ -70,112 +69,88 @@ body {
   font-size: 13px;
   line-height: 13px; }
 
-.top-left {
-  font-size: 13px;
-  color: #fd6f1f;
-  float: left; }
-  .top-left span {
-    border-right: 1px solid #999;
-    padding-right: 16px;
-    display: inline-block; }
-  .top-left .login {
-    color: #ff6e1f;
-    margin-right: 10px; }
-  .top-left .free-regist {
-    color: #666; }
-  .top-left .logo-out {
-    color: #999;
-    padding-left: 16px; }
-
-.top-right {
-  float: right; }
-  .top-right li {
+.shop-topbar {
+  position: absolute;
+  top: 0;
+  line-height: 58px;
+  height: 58px;
+  background: rgba(0, 0, 0, 0.4); }
+  .shop-topbar .topbar-item {
     float: left;
-    padding: 0 15px;
-    border-right: 1px solid #999;
-    margin-right: -1px; }
-    .top-right li a {
-      color: #999; }
+    padding-right: 40px;
+    color: #fff; }
+  .shop-topbar .topbar-logo {
+    margin: 8px 115px 8px 0;
+    width: 80px;
+    height: 42px; }
 
-.img-logo {
-  width: 136px; }
-
-.search-box {
-  margin: 23px 30px 0 92px;
-  position: relative; }
-  .search-box .icon-search {
-    color: #e2e2e2;
-    transform: rotate(95deg);
-    -ms-transform: rotate(95deg);
-    /* IE 9 */
-    -moz-transform: rotate(95deg);
-    /* Firefox */
-    -webkit-transform: rotate(95deg);
-    /* Safari 和 Chrome */
-    position: absolute;
-    left: 10px;
-    top: 18px;
-    font-size: 30px; }
-  .search-box .search-input {
-    border: 2px solid #ff6e1f;
-    padding-left: 50px;
-    line-height: 38px;
-    height: 38px;
-    width: 420px;
-    font-size: 14px; }
-  .search-box .search-btn {
-    line-height: 44px;
-    height: 44px;
-    background-color: #ff6e1f;
-    padding: 0 28px;
+.topbar-right {
+  float: right;
+  color: #fff; }
+  .topbar-right span {
+    padding-right: 16px; }
+  .topbar-right .logo-out {
     color: #fff;
-    font-size: 22px; }
+    padding-left: 14px;
+    box-sizing: border-box;
+    position: relative; }
+    .topbar-right .logo-out:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 1px;
+      height: 14px;
+      margin-top: -7px;
+      background: #bab5bb; }
 
-.add-supper {
-  margin-top: 30px;
-  margin-right: 15px;
-  line-height: 26px; }
-  .add-supper .icon-add-supper {
-    color: #ff6e1f;
-    font-size: 26px;
+.mod-img {
+  background: url("../images/bg01.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 58px;
+  height: 197px; }
+
+.shopguide-info {
+  margin-top: 18px; }
+  .shopguide-info img {
+    float: left;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.3);
     vertical-align: middle; }
-  .add-supper span {
-    color: #ff6e1f;
+  .shopguide-info .shop-intro {
+    float: left;
+    margin: 26px 0 12px 20px;
+    color: #fff; }
+    .shopguide-info .shop-intro p {
+      line-height: 34px;
+      font-size: 18px; }
+      .shopguide-info .shop-intro p.contact {
+        margin-left: -8px; }
+      .shopguide-info .shop-intro p .iconfont {
+        vertical-align: middle; }
+      .shopguide-info .shop-intro p .icon-tel {
+        font-size: 18px; }
+      .shopguide-info .shop-intro p .shoper-txt {
+        margin-left: 12px;
+        margin-right: 65px; }
+
+.relative-info {
+  margin-top: 35px; }
+
+.go-edit {
+  margin-top: 5px;
+  border-radius: 25px;
+  line-height: 36px;
+  height: 36px;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0 22px;
+  font-size: 18px; }
+  .go-edit .icon-goedit {
+    vertical-align: middle;
     font-size: 16px; }
-
-.qrcode-tb {
-  margin-left: 50px; }
-  .qrcode-tb span {
-    color: #ff341c; }
-  .qrcode-tb .qrcode-img {
-    display: block;
-    margin-top: 8px;
-    width: 54px; }
-
-.nav-list {
-  overflow: hidden;
-  font-size: 16px;
-  line-height: 16px;
-  margin: 20px 0 10px; }
-  .nav-list li {
-    float: left; }
-    .nav-list li a {
-      margin: 10px 8px 0;
-      color: #3c3c3c;
-      display: inline-block;
-      padding: 6px 12px; }
-      .nav-list li a.current {
-        color: #ff6e1f; }
-      .nav-list li a:hover {
-        background: #ff6e1f;
-        color: #fff;
-        border-radius: 2px; }
-    .nav-list li .line {
-      width: 2px;
-      height: 15px;
-      background-color: #dcdbdb;
-      display: inline-block;
-      vertical-align: middle; }
 
 .title-h {
   margin-left: 15px;
@@ -275,7 +250,7 @@ body {
     margin-bottom: 10px; }
   .links .f-16 {
     font-size: 16px;
-    margin-right: 60px; }
+    margin-right: 58px; }
 
 .copyright {
   text-align: center;

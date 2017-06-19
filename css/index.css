@@ -177,6 +177,18 @@ body {
       display: inline-block;
       vertical-align: middle; }
 
+.go-edit {
+  margin-top: 18px;
+  border-radius: 25px;
+  line-height: 34px;
+  height: 34px;
+  border: 1px solid #ff6e1f;
+  color: #ff6e1f;
+  padding: 0 25px; }
+  .go-edit .icon-goedit {
+    vertical-align: middle;
+    font-size: 16px; }
+
 .title-h {
   margin-left: 15px;
   font-size: 18px;
@@ -275,7 +287,7 @@ body {
     margin-bottom: 10px; }
   .links .f-16 {
     font-size: 16px;
-    margin-right: 60px; }
+    margin-right: 58px; }
 
 .copyright {
   text-align: center;
