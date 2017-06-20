@@ -80,19 +80,24 @@
     }
 }
 .relative-info{
-    margin-top: 35px;
-}
-    .go-edit{
-        margin-top: 5px;
-        border-radius: 25px;
-        line-height: 36px;
-        height: 36px;
-        border: 2px solid #fff;
-        color: #fff;
-        padding: 0 22px;
-        font-size: 18px;
-        .icon-goedit{
-            vertical-align: middle;
-            font-size: 16px;
+    margin-top: 46px;
+    .disprice{
+        margin-right: 66px;
+        span{
+            display: block;
+            color: #fff;
+            font-size: 20px;
+            &.money{
+                font-size: 28px;
+            }
         }
     }
+    .round-rect{
+        @include round-rect(25px, #fff);
+        margin-top: 5px;
+        line-height: 36px;
+        height: 36px;
+        font-size: 18px;
+        border-width: 2px;
+    }
+}

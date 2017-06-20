@@ -69,6 +69,10 @@ body {
   font-size: 13px;
   line-height: 13px; }
 
+.icon-arrow-right {
+  vertical-align: middle;
+  font-size: 16px; }
+
 .shop-topbar {
   position: absolute;
   top: 0;
@@ -137,20 +141,88 @@ body {
         margin-right: 65px; }
 
 .relative-info {
-  margin-top: 35px; }
+  margin-top: 46px; }
+  .relative-info .disprice {
+    margin-right: 66px; }
+    .relative-info .disprice span {
+      display: block;
+      color: #fff;
+      font-size: 20px; }
+      .relative-info .disprice span.money {
+        font-size: 28px; }
+  .relative-info .round-rect {
+    margin-top: 18px;
+    border-radius: 25px;
+    line-height: 34px;
+    height: 34px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0 25px;
+    margin-top: 5px;
+    line-height: 36px;
+    height: 36px;
+    font-size: 18px;
+    border-width: 2px; }
 
-.go-edit {
-  margin-top: 5px;
-  border-radius: 25px;
-  line-height: 36px;
-  height: 36px;
-  border: 2px solid #fff;
-  color: #fff;
-  padding: 0 22px;
-  font-size: 18px; }
-  .go-edit .icon-goedit {
-    vertical-align: middle;
-    font-size: 16px; }
+.shopnav-left {
+  float: left;
+  margin-left: -1px;
+  overflow: hidden;
+  width: 74%; }
+  .shopnav-left .shopnav-tab {
+    display: inline-block;
+    padding: 28px 50px;
+    font-size: 16px;
+    color: #666;
+    position: relative; }
+    .shopnav-left .shopnav-tab:before, .shopnav-left .shopnav-tab.current:after {
+      content: '';
+      position: absolute;
+      left: 0; }
+    .shopnav-left .shopnav-tab:before {
+      top: 50%;
+      width: 1px;
+      height: 14px;
+      margin-top: -7px;
+      background: #bab5bb; }
+    .shopnav-left .shopnav-tab.current:after {
+      bottom: 0;
+      width: 100%;
+      height: 4px;
+      background: #ff6e1f; }
+  .shopnav-left .shop-icons-list {
+    float: right;
+    margin-top: 20px;
+    margin-right: 100px; }
+    .shopnav-left .shop-icons-list .icon-item {
+      display: inline-block;
+      border: 1px solid #dadada;
+      color: #c9c9c9;
+      padding: 0 2px;
+      margin-left: -5px; }
+    .shopnav-left .shop-icons-list .selected {
+      color: #fff;
+      background: #ff6e1f;
+      border-color: #ff6e1f; }
+
+.shop-search-box {
+  float: right;
+  margin: 18px 0 15px;
+  border: 1px solid #c9c9c9;
+  position: relative;
+  z-index: 3;
+  height: 40px; }
+  .shop-search-box .search-input {
+    width: 245px;
+    line-height: 38px;
+    padding-left: 15px; }
+  .shop-search-box .search-btn {
+    height: 40px;
+    background: #fff;
+    padding-right: 12px; }
+  .shop-search-box .icon-search {
+    color: #999;
+    font-size: 30px; }
 
 .title-h {
   margin-left: 15px;
@@ -209,7 +281,7 @@ body {
     .shop-info .sales .shop-name, .shop-info .sales .shop-des {
       color: #ff6e1f;
       font-size: 14px; }
-  .shop-info .go-edit {
+  .shop-info .round-rect {
     margin-top: 18px;
     border-radius: 25px;
     line-height: 34px;
@@ -217,9 +289,6 @@ body {
     border: 1px solid #ff6e1f;
     color: #ff6e1f;
     padding: 0 25px; }
-    .shop-info .go-edit .icon-goedit {
-      vertical-align: middle;
-      font-size: 16px; }
 
 .footer-main {
   padding: 25px 45px 0;
@@ -258,34 +327,6 @@ body {
   padding-bottom: 35px;
   color: #999;
   font-size: 13px; }
-
-.sidebar {
-  background-color: #fff;
-  font-family: 'STFangsong, SimSun'; }
-  .sidebar .item {
-    display: block;
-    width: 76px;
-    border: 1px solid #efefef;
-    color: #666;
-    text-align: center;
-    padding: 10px 0 8px; }
-    .sidebar .item .iconfont {
-      display: block;
-      font-size: 38px;
-      line-height: 38px; }
-    .sidebar .item .icon-go-top {
-      font-size: 24px; }
-    .sidebar .item.current, .sidebar .item:hover {
-      color: #ff6e1f;
-      border-color: #ff6e1f; }
-  .sidebar .go-top {
-    background-color: #e7e7e7; }
-
-.side-fixed {
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  z-index: 10; }
 
 .all-goods li {
   clear: left; }

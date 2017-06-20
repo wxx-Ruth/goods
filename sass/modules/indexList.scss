@@ -69,17 +69,7 @@
             font-size:14px;
         }
     }
-    .go-edit{
-        margin-top: 18px;
-        border-radius: 25px;
-        line-height: 34px;
-        height: 34px;
-        border: 1px solid $byellow;
-        color: $byellow;
-        padding: 0 25px;
-        .icon-goedit{
-            vertical-align: middle;
-            font-size: 16px;
-        }
+    .round-rect{
+       @include round-rect();
     }
 }

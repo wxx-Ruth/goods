@@ -1,0 +1,70 @@
+.shopnav-left{
+    float: left;
+    margin-left: -1px;
+    overflow: hidden;
+    width: 74%;
+    .shopnav-tab{
+        display: inline-block;
+        padding: 28px 50px;
+        font-size: $font-size-m;
+        color: $cgray;
+        position: relative;
+        &:before, &.current:after{
+            content: '';
+            position: absolute;
+            left: 0;
+        }
+        &:before{
+            top: 50%;
+            width: 1px;
+            height: 14px;
+            margin-top: -7px;
+            background: #bab5bb;
+        }
+        &.current:after{
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+            background: $byellow;
+        }
+    }
+    .shop-icons-list{
+        float: right;
+        margin-top: 20px;
+        margin-right: 100px;
+        .icon-item{
+            display: inline-block;
+            border: 1px solid #dadada;
+            color: #c9c9c9;
+            padding: 0 2px;
+            margin-left: -5px;
+        }
+        .selected{
+            color: #fff;
+            background: $byellow;
+            border-color: $byellow;
+        }
+    }
+}
+.shop-search-box{
+    float: right;
+    margin: 18px 0 15px; 
+    border: 1px solid #c9c9c9;
+    position: relative;
+    z-index: 3;
+    height: 40px;
+    .search-input{
+        width: 245px;
+        line-height: 38px;
+        padding-left: 15px;
+    }
+    .search-btn{
+        height: 40px;
+        background: #fff;
+        padding-right: 12px;
+    }
+    .icon-search{
+        color: $gray-light;
+        font-size: 30px;
+    }
+}

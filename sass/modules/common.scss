@@ -98,3 +98,16 @@ body{
 	-moz-transform: rotate($deg); 	/* Firefox */
 	-webkit-transform: rotate($deg); /* Safari 和 Chrome */
 }
+@mixin round-rect($radius: 25px, $color: $byellow){
+	margin-top: 18px;
+	border-radius: $radius;
+	line-height: 34px;
+	height: 34px;
+	border: 1px solid $color;
+	color: $color;
+	padding: 0 25px;
+}
+.icon-arrow-right{
+	vertical-align: middle;
+	font-size: 16px;
+}

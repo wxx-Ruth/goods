@@ -70,6 +70,10 @@ body {
   font-size: 13px;
   line-height: 13px; }
 
+.icon-arrow-right {
+  vertical-align: middle;
+  font-size: 16px; }
+
 .top-left {
   font-size: 13px;
   color: #fd6f1f;
@@ -177,18 +181,6 @@ body {
       display: inline-block;
       vertical-align: middle; }
 
-.go-edit {
-  margin-top: 18px;
-  border-radius: 25px;
-  line-height: 34px;
-  height: 34px;
-  border: 1px solid #ff6e1f;
-  color: #ff6e1f;
-  padding: 0 25px; }
-  .go-edit .icon-goedit {
-    vertical-align: middle;
-    font-size: 16px; }
-
 .title-h {
   margin-left: 15px;
   font-size: 18px;
@@ -246,7 +238,7 @@ body {
     .shop-info .sales .shop-name, .shop-info .sales .shop-des {
       color: #ff6e1f;
       font-size: 14px; }
-  .shop-info .go-edit {
+  .shop-info .round-rect {
     margin-top: 18px;
     border-radius: 25px;
     line-height: 34px;
@@ -254,9 +246,6 @@ body {
     border: 1px solid #ff6e1f;
     color: #ff6e1f;
     padding: 0 25px; }
-    .shop-info .go-edit .icon-goedit {
-      vertical-align: middle;
-      font-size: 16px; }
 
 .footer-main {
   padding: 25px 45px 0;
