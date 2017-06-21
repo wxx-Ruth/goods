@@ -71,5 +71,6 @@
     }
     .round-rect{
        @include round-rect();
+        margin-top: 18px;
     }
 }

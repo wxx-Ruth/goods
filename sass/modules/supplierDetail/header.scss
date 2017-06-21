@@ -8,6 +8,7 @@
         float: left;
         padding-right: 40px;
         color: #fff;
+        font-size: $font-size-m;
     }
     .topbar-logo{
         margin: 8px 115px 8px 0;
@@ -18,6 +19,7 @@
 .topbar-right{
     float: right;
     color: #fff;
+    font-size: $font-size-s;
     span{
         padding-right: 16px;
         
@@ -93,10 +95,8 @@
         }
     }
     .round-rect{
-        @include round-rect(25px, #fff);
+        @include round-rect(25px, 36px,#fff);
         margin-top: 5px;
-        line-height: 36px;
-        height: 36px;
         font-size: 18px;
         border-width: 2px;
     }

@@ -1,0 +1,53 @@
+.goods-lr{
+    width: 906px;
+    background-color: $bgray;
+    li{
+        clear: left;
+        position: relative;
+        margin-bottom: 10px;
+        background-color: #fff;
+        .img, .info{
+            float: left;
+        }
+      .info{
+          margin-left: 30px;
+          width: 618px;
+      }
+      .price{
+          margin-top: 20px;
+          .price-n{
+              color: #ea0b0b;
+              font-weight: bold;
+          }
+      }
+       .name{
+            padding: 10px 0 8px;
+            line-height: 30px;
+            font-size: $font-size-s;
+        }
+    }
+}
+.corner-action{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    .icon-remove{
+        color: #fff;
+        border-radius: 4px;
+        background-color: #ffae21;
+    }
+    span{
+        display: block;
+        margin-top: 8px;
+        color: &cgray;
+        font-size: 12px;
+    }
+}
+.shopping-car{
+    position: absolute;
+    bottom: 54px;
+    right: 54px;
+    @include round-rect(25px, 30px,#ff7521);
+    color: #fff;
+    background-color: #ff7521;
+}
