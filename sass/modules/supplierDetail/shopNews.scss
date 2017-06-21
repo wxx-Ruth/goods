@@ -1,0 +1,41 @@
+.shop-news-public{
+    position: absolute;
+    top: 26px;
+    right: 0;
+    width: 294px;
+    .shop-news{
+        height: 48px;
+        line-height: 48px;
+        background-color: $byellow;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+    }
+    .news-list{
+        padding: 5px 10px 0;
+        background-color: #fff;
+        .item{
+            position: relative;
+            border-bottom: 1px dashed #e8e8e8;
+            p{
+                color: $black;
+                margin-top: 10px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            span,.look-more{
+                display: inline-block;
+                color: $gray-light;
+                font-size: 12px;
+                margin-bottom: 8px;
+            }
+            .look-more{
+                position: absolute;
+                right: 8px;
+                bottom: 0;
+            }
+            
+        }
+    }
+}

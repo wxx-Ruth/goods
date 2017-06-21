@@ -79,6 +79,9 @@ body {
   margin: 8px 0 15px 30px;
   color: #666; }
 
+.w-906 {
+  width: 906px; }
+
 .top-left {
   font-size: 13px;
   color: #fd6f1f;
@@ -216,7 +219,8 @@ body {
       padding-left: 6px; }
     .list li .price {
       padding: 22px 0 0;
-      color: #ea0b0b; }
+      color: #ea0b0b;
+      font-size: 16px; }
     .list li .name {
       display: block;
       padding: 8px 0;

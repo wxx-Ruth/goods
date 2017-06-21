@@ -1,0 +1,22 @@
+.shop-goods-menu{
+    padding: 30px 15px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    z-index: 101;
+    margin-bottom: 20px;
+    a{
+        display: inline-block;
+        margin: 2px 5px; 
+        padding: 3px 10px;
+        width: 14%;
+        color: #101010;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        vertical-align: top;
+        font-size: $font-size-m;
+        &:hover{
+            color: $byellow;
+        }
+    }
+}
