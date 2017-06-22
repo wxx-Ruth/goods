@@ -98,11 +98,11 @@ body{
 	-moz-transform: rotate($deg); 	/* Firefox */
 	-webkit-transform: rotate($deg); /* Safari 和 Chrome */
 }
-@mixin round-rect($radius: 25px, $height: 32px, $color: $byellow){
+@mixin round-rect($radius: 25px, $height: 32px, $bcolor: $byellow, $color: #fff){
 	border-radius: $radius;
 	line-height: $height;
 	height: $height;
-	border: 1px solid $color;
+	border: 1px solid $bcolor;
 	color: $color;
 	padding: 0 25px;
 }
@@ -117,4 +117,7 @@ body{
 }
 .w-906{
 	width: 906px;
+}
+.hide{
+	display: none!important;
 }

@@ -17,7 +17,7 @@
           margin-top: 20px;
           .price-n{
               color: #ea0b0b;
-              font-weight: bold;
+              font-weight: 700;
           }
       }
        .name{
@@ -25,36 +25,40 @@
             line-height: 30px;
             font-size: $font-size-s;
         }
+        .shopping-car{
+            position: absolute;
+            bottom: 54px;
+            right: 54px;
+        }
     }
 }
 .corner-action{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 8px;
+    right: 2px;
     text-align: center;
     .icon-five-star{
         color: #ffae21;
-        font-size: 36px;
+        font-size: 46px;
     }
     span{
         display: block;
-        color: &cgray;
+        color: $cgray;
         font-size: 12px;
+        margin-top: -5px;
     }
 }
-.shopping-car{
-    position: absolute;
-    bottom: 54px;
-    right: 54px;
-    @include round-rect(25px, 30px,#ff7521);
-    color: #fff;
-    background-color: #ff7521;
-}
+
 .detail-lists{
     position: relative;
 }
 .good-list{
     width: 100%;
+    .round-rect{
+        @include round-rect(25px, 30px,#ff7521, #fff);
+        background-color: #ff7521;
+        display: inline-block;
+    }
 }
 .goods-list-recommend{
     background: $bgray;
@@ -63,10 +67,63 @@
         position: relative;
         margin-right: 10px;
         background-color: #fff;
-        padding: 20px 46px 18px;
+        padding: 10px 46px 18px;
         margin-bottom: 8px;
+        text-align: center;
         .corner-action{
-            right: 20px;
+            right: 14px;
+        }
+        .shopping-car{
+            margin-top: 22px;
+        }
+        .name{
+            padding: 8px 0 4px;
         }
     }
+
 }
+
+.shop-cartctrl {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    cursor: pointer;
+    width: 118px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid $border-f1;
+    margin-top: 22px;
+    .ctrl {
+        position: absolute;
+        top: 0;
+        display: inline-block;
+        height: 28px;
+        width: 34px;
+        text-align: center;
+        background-color: #f4f4f4;
+    }
+    .minus {
+            left: 0;
+            border-right: 1px solid $border-f1;
+            border-radius: 20px 0 0 20px;
+            cursor: pointer
+    }
+    .plus {
+        right: 0;
+        border-left: 1px solid $border-f1;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer
+    }
+    .quantity{
+        left: 35px;
+        background-color: #fff;
+        width: 46px;
+        height: 26px;
+    }
+}
+
+
+

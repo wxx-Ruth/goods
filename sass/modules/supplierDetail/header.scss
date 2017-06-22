@@ -95,7 +95,7 @@
         }
     }
     .round-rect{
-        @include round-rect(25px, 36px,#fff);
+        @include round-rect(25px, 36px,#fff, #fff);
         margin-top: 5px;
         font-size: 18px;
         border-width: 2px;

@@ -29,11 +29,17 @@
         }
         .info{
             padding-left: 6px;
+            text-align: left;
         }
         .price{
             padding: 22px 0 0;
             color: $red01;
             font-size: $font-size-m;
+            i{
+                font-size: 12px;
+                margin-right: 3px;
+                display: inline-block;
+            }
         }
         .name{
             display: block;
@@ -71,7 +77,8 @@
         }
     }
     .round-rect{
-       @include round-rect();
+       @include round-rect;
+       color: $byellow;
         margin-top: 18px;
     }
 }
