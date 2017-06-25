@@ -39,3 +39,39 @@
         }
     }
 }
+.shop-news-detail{
+    position: absolute;
+    top: 55px;
+    right: 305px;
+    background: #fff;
+    z-index: 10;
+    width: 384px;
+    -webkit-box-shadow: 3px 1px 7px rgba(91,91,91,.32);
+	-moz-box-shadow: 3px 1px 7px rgba(91,91,91,.32);
+	box-shadow: 3px 1px 7px rgba(91,91,91,.32);
+    padding: 15px 12px;
+    color: $gray-light;
+    .publish-time{
+        display: block;
+        margin-bottom: 22px;
+        font-size: 12px;
+    }
+    .title{
+        text-align: center;
+        font-weight: 700;
+        color: $cgray;
+    }
+    p{
+        font-size: $font-size-s;
+        margin: 16px 12px 35px;
+        line-height: 26px;
+    }
+    .icon-close{
+        position: absolute;
+        top: 15px;
+        right: 12px;
+        font-size: 20px;
+    }
+}
+
+

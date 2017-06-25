@@ -340,8 +340,10 @@ body {
   right: 2px;
   text-align: center; }
   .corner-action .icon-five-star {
-    color: #ffae21;
+    color: #ebeeef;
     font-size: 46px; }
+  .corner-action .icon-collected {
+    color: #ffae21; }
   .corner-action span {
     display: block;
     color: #666;
@@ -451,6 +453,36 @@ body {
         right: 8px;
         bottom: 0; }
 
+.shop-news-detail {
+  position: absolute;
+  top: 55px;
+  right: 305px;
+  background: #fff;
+  z-index: 10;
+  width: 384px;
+  -webkit-box-shadow: 3px 1px 7px rgba(91, 91, 91, 0.32);
+  -moz-box-shadow: 3px 1px 7px rgba(91, 91, 91, 0.32);
+  box-shadow: 3px 1px 7px rgba(91, 91, 91, 0.32);
+  padding: 15px 12px;
+  color: #999; }
+  .shop-news-detail .publish-time {
+    display: block;
+    margin-bottom: 22px;
+    font-size: 12px; }
+  .shop-news-detail .title {
+    text-align: center;
+    font-weight: 700;
+    color: #666; }
+  .shop-news-detail p {
+    font-size: 13px;
+    margin: 16px 12px 35px;
+    line-height: 26px; }
+  .shop-news-detail .icon-close {
+    position: absolute;
+    top: 15px;
+    right: 12px;
+    font-size: 20px; }
+
 .shop-goods-menu {
   padding: 30px 15px;
   background-color: #fff;
@@ -470,6 +502,118 @@ body {
     font-size: 16px; }
     .shop-goods-menu a:hover {
       color: #ff6e1f; }
+
+.shop-cart {
+  z-index: 102;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 402px; }
+
+.shop-cartbasket {
+  width: 100%;
+  background-color: #fff; }
+  .shop-cartbasket .shop-head {
+    padding: 15px 12px;
+    overflow: hidden;
+    color: #666; }
+  .shop-cartbasket .single {
+    background-color: #fafafa;
+    border-top: 2px solid #ff6e1f; }
+  .shop-cartbasket .clear {
+    color: #ff6e1f; }
+  .shop-cartbasket .shop-quantity {
+    margin-right: 68px; }
+
+.shop-cartfooter {
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  background-color: #2c2c2c;
+  color: #fff; }
+  .shop-cartfooter .icon-add-cart {
+    font-size: 36px;
+    margin: 0 10px 0 16px;
+    vertical-align: middle; }
+  .shop-cartfooter .total-price {
+    font-size: 18px;
+    font-weight: 700; }
+  .shop-cartfooter .cart-checkout {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 118px;
+    color: #fff;
+    background: #999;
+    font-size: 16px; }
+
+.shop-cartbasket-empty {
+  text-align: center; }
+  .shop-cartbasket-empty .icon-add-cart {
+    display: block;
+    font-size: 52px;
+    color: #ddd;
+    margin-top: 15px; }
+  .shop-cartbasket-empty p {
+    color: #666;
+    padding-bottom: 12px; }
+
+.shop-cart-row {
+  display: table;
+  table-layout: fixed;
+  height: 49px;
+  padding: 0 12px;
+  font-size: 13px; }
+  .shop-cart-row .cell {
+    display: table-cell;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee; }
+    .shop-cart-row .cell.itemname {
+      width: 25%;
+      margin-right: 10px;
+      font-size: 13px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #666; }
+    .shop-cart-row .cell.itemquantity {
+      color: #666;
+      width: 30%;
+      text-align: center; }
+      .shop-cart-row .cell.itemquantity button {
+        background-color: #fff;
+        height: 24px;
+        width: 24px;
+        line-height: 18px;
+        vertical-align: top;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        color: #666; }
+      .shop-cart-row .cell.itemquantity input {
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        height: 22px;
+        width: 38px;
+        line-height: 20px;
+        font-size: 12px;
+        vertical-align: top;
+        text-align: center;
+        color: #666; }
+    .shop-cart-row .cell.itemtotal {
+      text-align: center; }
+      .shop-cart-row .cell.itemtotal .unit {
+        color: #666;
+        margin-left: 10px;
+        margin-right: 15px;
+        font-weight: 700; }
+      .shop-cart-row .cell.itemtotal .total {
+        font-weight: 700;
+        color: #ff6e1f; }
+  .shop-cart-row.row-active .itemname, .shop-cart-row.row-active .itemtotal .total {
+    color: #f15c5c; }
 
 .footer-main {
   padding: 25px 45px 0;
