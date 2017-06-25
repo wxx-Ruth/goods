@@ -1,3 +1,10 @@
+.list{
+       .round-rect{
+        @include round-rect(25px, 30px,#ff7521, #fff);
+        background-color: #ff7521;
+        display: inline-block;
+    }
+}
 .goods-lr{
     background-color: $bgray;
     li{
@@ -57,11 +64,6 @@
 }
 .good-list{
     width: 100%;
-    .round-rect{
-        @include round-rect(25px, 30px,#ff7521, #fff);
-        background-color: #ff7521;
-        display: inline-block;
-    }
 }
 .goods-list-recommend{
     background: $bgray;

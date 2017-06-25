@@ -84,6 +84,34 @@ body {
 .hide {
   display: none !important; }
 
+.cell {
+  float: left;
+  padding: 24px 21px 30px; }
+  .cell .img {
+    width: 200px;
+    height: 200px; }
+    .cell .img img {
+      width: 100%;
+      height: 100%; }
+  .cell .info {
+    padding-left: 6px;
+    text-align: left; }
+    .cell .info .amount {
+      font-size: 13px;
+      color: #999; }
+  .cell .price {
+    padding: 22px 0 0;
+    color: #ea0b0b;
+    font-size: 16px; }
+    .cell .price i {
+      font-size: 12px;
+      margin-right: 3px;
+      display: inline-block; }
+  .cell .name {
+    display: block;
+    padding: 8px 0;
+    color: #3c3c3c; }
+
 .shop-topbar {
   position: absolute;
   top: 0;
@@ -249,33 +277,32 @@ body {
 .list {
   overflow: hidden;
   zoom: 1;
-  background: #fff;
-  margin-left: -10px; }
-  .list li {
+  background: #fff; }
+  .list li, .list .cell {
     float: left;
-    padding: 24px 22px 30px; }
-    .list li .img {
+    padding: 24px 21px 30px; }
+    .list li .img, .list .cell .img {
       width: 200px;
       height: 200px; }
-      .list li .img img {
+      .list li .img img, .list .cell .img img {
         width: 100%;
         height: 100%; }
-    .list li .info {
+    .list li .info, .list .cell .info {
       padding-left: 6px;
       text-align: left; }
-    .list li .price {
+    .list li .price, .list .cell .price {
       padding: 22px 0 0;
       color: #ea0b0b;
       font-size: 16px; }
-      .list li .price i {
+      .list li .price i, .list .cell .price i {
         font-size: 12px;
         margin-right: 3px;
         display: inline-block; }
-    .list li .name {
+    .list li .name, .list .cell .name {
       display: block;
       padding: 8px 0;
       color: #3c3c3c; }
-    .list li .spec {
+    .list li .spec, .list .cell .spec {
       color: #999; }
 
 .shop-info {
@@ -306,6 +333,16 @@ body {
     padding: 0 25px;
     color: #ff6e1f;
     margin-top: 18px; }
+
+.list .round-rect {
+  border-radius: 25px;
+  line-height: 30px;
+  height: 30px;
+  border: 1px solid #ff7521;
+  color: #fff;
+  padding: 0 25px;
+  background-color: #ff7521;
+  display: inline-block; }
 
 .goods-lr {
   background-color: #f3f3f3; }
@@ -355,15 +392,6 @@ body {
 
 .good-list {
   width: 100%; }
-  .good-list .round-rect {
-    border-radius: 25px;
-    line-height: 30px;
-    height: 30px;
-    border: 1px solid #ff7521;
-    color: #fff;
-    padding: 0 25px;
-    background-color: #ff7521;
-    display: inline-block; }
 
 .goods-list-recommend {
   background: #f3f3f3;
@@ -549,6 +577,8 @@ body {
     color: #fff;
     background: #999;
     font-size: 16px; }
+  .shop-cartfooter .acounted {
+    background-color: #ff6e1f; }
 
 .shop-cartbasket-empty {
   text-align: center; }
@@ -561,10 +591,15 @@ body {
     color: #666;
     padding-bottom: 12px; }
 
+.shop-cart-list {
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
 .shop-cart-row {
   display: table;
   table-layout: fixed;
-  height: 49px;
+  height: 50px;
   padding: 0 12px;
   font-size: 13px; }
   .shop-cart-row .cell {
@@ -614,6 +649,61 @@ body {
         color: #ff6e1f; }
   .shop-cart-row.row-active .itemname, .shop-cart-row.row-active .itemtotal .total {
     color: #f15c5c; }
+
+.sales-item {
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 26px 20px 22px; }
+  .sales-item .sales-title {
+    color: #666; }
+  .sales-item .time {
+    font-size: 13px;
+    color: #999;
+    line-height: 24px; }
+  .sales-item .single-item {
+    padding: 0;
+    margin-bottom: 32px; }
+    .sales-item .single-item .img {
+      width: 250px;
+      height: 250px; }
+
+.pro-list-more {
+  padding: 0 22px;
+  position: relative;
+  margin-left: 10px; }
+  .pro-list-more .list {
+    margin-top: 36px;
+    margin-left: 0; }
+    .pro-list-more .list li {
+      width: 150px;
+      padding: 0 18px; }
+      .pro-list-more .list li .img {
+        width: 150px;
+        height: 150px; }
+  .pro-list-more .page-prev, .pro-list-more .page-next {
+    position: absolute;
+    top: 50%;
+    border: 1px solid #f1f1f1;
+    color: #999;
+    padding: 7px 2px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%); }
+  .pro-list-more .page-prev {
+    left: 0; }
+  .pro-list-more .page-next {
+    right: 0; }
+
+.list-more {
+  width: 560px;
+  overflow: hidden; }
+
+.pro-goods-list {
+  position: relative; }
+  .pro-goods-list .shopping-car {
+    position: absolute;
+    right: 34px;
+    bottom: 26px; }
 
 .footer-main {
   padding: 25px 45px 0;
