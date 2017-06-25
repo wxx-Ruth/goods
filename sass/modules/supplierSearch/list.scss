@@ -1,0 +1,54 @@
+.goods-imgborder {
+    border: 1px solid #f1f1f1;
+}
+
+.request-cooperation {
+    position: absolute;
+    top: 80px;
+    right: 54px;
+    @include round-rect(25px, 30px, #ff7521);
+    color: #ff6f20;
+    background-color: white;
+    display: block;
+}
+
+.result-list {
+    position: relative;
+}
+
+.supplier-info {
+    width: 230px;
+    .supplier-company {
+        img {
+            width: 40px;
+            height: 40px;
+            background: #ccc;
+            vertical-align: middle;
+            border-radius: 5px;
+            margin: 0 10px 0 0;
+        }
+    }
+    .supplier-name {
+        i {
+            padding: 0 10px 0 20px;
+        }
+        height: 30px;
+        line-height: 30px;
+        color: #3c3c3c
+    }
+    .supplier-telphone {
+        i {
+            padding: 0 10px 0 20px;
+        }
+        height: 30px;
+        line-height: 30px;
+        color: #3c3c3c
+    }
+    .supplier-address {
+        i {
+            padding: 10px 10px 0 20px;
+        }
+        color: #3c3c3c;
+        margin-bottom: 20px;
+    }
+}
