@@ -1,0 +1,43 @@
+.mod-img {
+    background: #ff9b23;
+    padding-top: 58px;
+    height: 392px;
+    text-align: center;
+}
+
+.supplier-add-intro {
+    height: 40px;
+    font-size: 30px;
+    color: white;
+    margin: 0 0 20px 0;
+}
+
+.search-box {
+    width: 520px;
+    height: 60px;
+    margin: 0 auto;
+    background: #fff;
+    @include round-rect(30px, 60px, #ff7521);
+}
+
+.search-box .icon-search {
+    color: #e2e2e2;
+    transform: rotate(95deg);
+    -ms-transform: rotate(95deg);
+    /* IE 9 */
+    -moz-transform: rotate(95deg);
+    /* Firefox */
+    -webkit-transform: rotate(95deg);
+    /* Safari 和 Chrome */
+    font-size: 30px;
+    margin: 0 10px 0 40px;
+}
+
+.search-box .search-input {
+    line-height: 60px;
+    height: 60px;
+    width: 370px;
+    font-size: 14px;
+    text-align: center;
+    // border: 1px solid #ff7521;
+}
