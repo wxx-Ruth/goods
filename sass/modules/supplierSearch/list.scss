@@ -18,6 +18,10 @@
 
 .supplier-info {
     width: 230px;
+    .iconfont{
+        color: #cdcdcd;
+        padding: 0 10px 0 20px;
+    }
     .supplier-company {
         img {
             width: 40px;
@@ -29,25 +33,16 @@
         }
     }
     .supplier-name {
-        i {
-            padding: 0 10px 0 20px;
-        }
         height: 30px;
         line-height: 30px;
         color: #3c3c3c
     }
     .supplier-telphone {
-        i {
-            padding: 0 10px 0 20px;
-        }
         height: 30px;
         line-height: 30px;
         color: #3c3c3c
     }
     .supplier-address {
-        i {
-            padding: 10px 10px 0 20px;
-        }
         color: #3c3c3c;
         margin-bottom: 20px;
     }

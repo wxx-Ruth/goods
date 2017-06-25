@@ -85,6 +85,34 @@ body {
 .hide {
   display: none !important; }
 
+.cell {
+  float: left;
+  padding: 24px 21px 30px; }
+  .cell .img {
+    width: 200px;
+    height: 200px; }
+    .cell .img img {
+      width: 100%;
+      height: 100%; }
+  .cell .info {
+    padding-left: 6px;
+    text-align: left; }
+    .cell .info .amount {
+      font-size: 13px;
+      color: #999; }
+  .cell .price {
+    padding: 22px 0 0;
+    color: #ea0b0b;
+    font-size: 16px; }
+    .cell .price i {
+      font-size: 12px;
+      margin-right: 3px;
+      display: inline-block; }
+  .cell .name {
+    display: block;
+    padding: 8px 0;
+    color: #3c3c3c; }
+
 .shop-topbar {
   position: absolute;
   top: 0;
@@ -190,33 +218,32 @@ body {
 .list {
   overflow: hidden;
   zoom: 1;
-  background: #fff;
-  margin-left: -10px; }
-  .list li {
+  background: #fff; }
+  .list li, .list .cell {
     float: left;
-    padding: 24px 22px 30px; }
-    .list li .img {
+    padding: 24px 21px 30px; }
+    .list li .img, .list .cell .img {
       width: 200px;
       height: 200px; }
-      .list li .img img {
+      .list li .img img, .list .cell .img img {
         width: 100%;
         height: 100%; }
-    .list li .info {
+    .list li .info, .list .cell .info {
       padding-left: 6px;
       text-align: left; }
-    .list li .price {
+    .list li .price, .list .cell .price {
       padding: 22px 0 0;
       color: #ea0b0b;
       font-size: 16px; }
-      .list li .price i {
+      .list li .price i, .list .cell .price i {
         font-size: 12px;
         margin-right: 3px;
         display: inline-block; }
-    .list li .name {
+    .list li .name, .list .cell .name {
       display: block;
       padding: 8px 0;
       color: #3c3c3c; }
-    .list li .spec {
+    .list li .spec, .list .cell .spec {
       color: #999; }
 
 .shop-info {
@@ -308,6 +335,9 @@ body {
 
 .supplier-info {
   width: 230px; }
+  .supplier-info .iconfont {
+    color: #cdcdcd;
+    padding: 0 10px 0 20px; }
   .supplier-info .supplier-company img {
     width: 40px;
     height: 40px;
@@ -319,19 +349,13 @@ body {
     height: 30px;
     line-height: 30px;
     color: #3c3c3c; }
-    .supplier-info .supplier-name i {
-      padding: 0 10px 0 20px; }
   .supplier-info .supplier-telphone {
     height: 30px;
     line-height: 30px;
     color: #3c3c3c; }
-    .supplier-info .supplier-telphone i {
-      padding: 0 10px 0 20px; }
   .supplier-info .supplier-address {
     color: #3c3c3c;
     margin-bottom: 20px; }
-    .supplier-info .supplier-address i {
-      padding: 10px 10px 0 20px; }
 
 .mod-img {
   background: #ff9b23;
