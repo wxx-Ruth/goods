@@ -85,30 +85,30 @@ body {
 .hide {
   display: none !important; }
 
-.cell {
+.goods-item {
   float: left;
   padding: 24px 21px 30px; }
-  .cell .img {
+  .goods-item .img {
     width: 200px;
     height: 200px; }
-    .cell .img img {
+    .goods-item .img img {
       width: 100%;
       height: 100%; }
-  .cell .info {
+  .goods-item .info {
     padding-left: 6px;
     text-align: left; }
-    .cell .info .amount {
+    .goods-item .info .amount {
       font-size: 13px;
       color: #999; }
-  .cell .price {
+  .goods-item .price {
     padding: 22px 0 0;
     color: #ea0b0b;
     font-size: 16px; }
-    .cell .price i {
+    .goods-item .price i {
       font-size: 12px;
       margin-right: 3px;
       display: inline-block; }
-  .cell .name {
+  .goods-item .name {
     display: block;
     padding: 8px 0;
     color: #3c3c3c; }
