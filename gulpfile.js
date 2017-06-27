@@ -4,7 +4,7 @@ var minifycss = require('gulp-minify-css');
 
 gulp.task('sass', function() {
     gulp.src('sass/pages/*.scss')
-        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('./css'))
 });
 
