@@ -23,7 +23,7 @@
 .checkout-item{
     float: left;
     padding: 11px 40px;
-    width: 45%;
+    width: 550px;
     border: 1px solid #eee;
     cursor: pointer;
     margin-right: 20px;
@@ -41,6 +41,7 @@
 
     ul{
         margin-bottom: 30px;
+        margin-right: -20px;
     }
     .active{
             border-color: $byellow;
@@ -56,6 +57,7 @@
 .shop-information{
     padding: 25px 50px;
     background: #fff;
+    margin-top: 10px;
     img{
         width: 50px;
         height: 50px;
@@ -78,11 +80,21 @@
 }
 
 .confirm-order-cart{
-    background: #fff;
     .shop-cart-row{
         padding: 0;
         width: 100%;
         text-align: center;
+        background: #fff;
+        &.bg-gray{
+             background: #f3f3f3;
+            .cell{
+                font-size: $font-size;
+                color: $gray-light;
+                &.itemdelete{
+                    visibility: hidden;
+                }
+            }
+        }
         .goods-item{
             padding: 24px 0 30px 50px;
             .img{
@@ -102,49 +114,128 @@
                 font-size: 13px;
             }
         }
-    }
-    .cell{
-        &.itemname{
-            width: 35%;
-        }
-         &.itemprice{
-            width: 15%;
-            span{
-                i{
-                    font-size: 12px;
+         .cell{
+            &.itemname{
+                width: 35%;
+            }
+            &.itemprice{
+                width: 15%;
+                span{
+                    i{
+                        font-size: 12px;
+                    }
+                    color: #ea0b0b;
+                    font-size: 16px;
+                    font-weight: 700;
                 }
-                color: #ea0b0b;
-                font-size: 16px;
-                font-weight: 700;
             }
-        }
-         &.itemtotal{
-            width: 20%;
-             .total{
-                 i{
-                    font-size: 12px;
+            &.itemtotal{
+                width: 20%;
+                .total{
+                    i{
+                        font-size: 12px;
+                    }
+                    color: #ea0b0b;
+                    font-size: 16px;
+                    font-weight: 700;
                 }
-                color: #ea0b0b;
-                font-size: 16px;
-                font-weight: 700;
+            }
+            &.itemquantity{
+                width: 18%;
+                button{
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                input{
+                    width: 42px;
+                    font-size: 13px;
+                }
+            
+            }
+            &.itemdelete{
+                width: 15%;
+                color: $gray-light;
+                .icon-delete{
+                    font-size: 32px;
+                }
             }
         }
-         &.itemquantity{
-            width: 18%;
-            button{
-                font-size: 16px;
-            }
-            input{
-                width: 42px;
-                font-size: 13px;
-            }
-           
-        }
-         &.itemdelete{
-            width: 15%;
-           
-        }
-
     }
-
+}
+.sales-goods-row{
+    margin-top: 10px;
+    height: 60px;
+    .cell.itemname{
+        color: #5e5e5e;
+        font-size: $font-size-m;
+    }
+}
+.confirm-order-bottom{
+    background: #fff;
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+    .total-price{
+        margin-left: 68px;
+        .amount{
+            margin-right: 98px;
+            color: $cgray;
+        }
+        .price{
+            margin-left: 25px;
+            font-size: 18px;
+            color: #ea0b0b;
+            font-weight: 700;
+            i{
+                font-size: 14px;
+            }
+        }
+    }
+    .submit-order{
+        position: absolute;
+        top: 20px;
+        right: 48px;
+        background-color: #eb2f2f;
+        border-radius: 4px;
+        line-height: 40px;
+        height: 40px;
+        color: #fff;
+        width: 150px;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+.order-address{
+    border: 1px solid #eee;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    .icon-location{
+        font-size: 90px;
+        color: #ccc;
+        border-right: 1px solid #eee;
+    }
+    dl{
+        float: left;
+        margin-left: 20px;
+        width: 928px;
+        margin: 10px 0 15px 22px;
+        dt, dd{
+            float: left;
+            color: #5e5e5e;
+        }
+        dt{
+            padding-right: 32px;
+        }
+        dd{
+            width: 40%;
+            .edit{
+                padding-left: 112px;
+                display: inline-block;
+                color: $byellow;
+            }
+            &.color-gray{
+                color: $gray-light;
+            }
+        }
+    }
 }

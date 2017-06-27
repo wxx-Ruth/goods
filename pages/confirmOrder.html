@@ -33,8 +33,18 @@
 			<div class="order-info">
 				<h2 class="title">确定订单</h2>
 				<h4 class="name">店铺名称<span class="color-gray">好家乡小超市</span></h4>
-				<div class="address">
-
+				<div class="order-address cf">
+					<i class="iconfont icon-location fl">&#xe657;</i>
+					<dl>
+						<dt>收&nbsp; 货&nbsp;人</dt>
+						<dd>张点点 <a href="javascript:;" class="edit">修改</a></dd>
+						<dt>联系电话</dt>
+						<dd>12131333331<a href="javascript:;" class="edit">修改</a></dd>
+					</dl>
+					<dl>
+						<dt>收货地址</dt>
+						<dd class="color-gray">四川省成都市花样校区66号8栋6732</dd>
+					</dl>
 				</div>
 				<div class="checkout-way">
 					<h2 class="name">配送方式</h2>
@@ -64,8 +74,7 @@
 				</div>
 				<div class="checkout-way">
 					<h2 class="name">商家留言</h2>
-					<textarea class="message">
-					</textarea>
+					<textarea class="message" name="message"></textarea>
 				</div>
 			</div>
 			<div class="shop-information">
@@ -81,7 +90,7 @@
 
             <!--购物车商品列表 -->
             <div class="confirm-order-cart">
-                <div class="shop-cart-row mod-gray">
+                <div class="shop-cart-row bg-gray">
                     <div class="cell itemname">商品</div>
                     <div class="cell itemprice">单价</div>
                     <div class="cell itemquantity">数量</div>
@@ -108,7 +117,7 @@
                     <div class="cell itemtotal">
                         <span class="total"><i>￥</i>1132323.22</span>
                     </div>
-                    <div class="cell itemdelete"><i class="iconfont">&#xe664;</i></div>
+                    <div class="cell itemdelete"><i class="iconfont icon-delete">&#xe664;</i></div>
                 </div>
                 <div class="shop-cart-row">
                     <div class="cell itemname">
@@ -130,7 +139,7 @@
                     <div class="cell itemtotal">
                         <span class="total"><i>￥</i>1132323.22</span>
                     </div>
-                    <div class="cell itemdelete"><i class="iconfont">&#xe664;</i></div>
+                    <div class="cell itemdelete"><i class="iconfont icon-delete">&#xe664;</i></div>
                 </div>
                 <div class="shop-cart-row">
                     <div class="cell itemname">
@@ -152,10 +161,67 @@
                     <div class="cell itemtotal">
                         <span class="total"><i>￥</i>1132323.22</span>
                     </div>
-                    <div class="cell itemdelete"><i class="iconfont">&#xe664;</i></div>
+                    <div class="cell itemdelete"><i class="iconfont icon-delete">&#xe664;</i></div>
                 </div>
-
+				<div class="shop-cart-row sales-goods-row">
+                    <div class="cell itemname">满99减10 送100瓶养乐多</div>
+                    <div class="cell itemprice"><span><i>￥</i>12232.00</span></div>
+                    <div class="cell itemquantity"><button>-</button><input class="" value="2"><button>+</button>
+                    </div>
+                    <div class="cell itemtotal">
+                        <span class="total"><i>￥</i>1132323.22</span>
+                    </div>
+                    <div class="cell itemdelete"><i class="iconfont icon-delete">&#xe664;</i></div>
+                </div>
+ 				<div class="shop-cart-row">
+                    <div class="cell itemname">
+                        	<div class="goods-item">
+							<div class="img fl">
+								<a href="" target="_blank" title="">
+									<img src="../images/good.jpg" alt="蓝莓咖啡和蓝灭咖啡">
+								</a>
+							</div>
+							<div class="info fl">
+								<a href="" target="_blank" title="" class="name">蓝莓咖啡和卡dsg斯蓝莓咖啡和卡斯</a>
+								<p class="spec">规格 550ml  成件规格 24瓶/件</p>
+							</div>
+						</div>
+                    </div>
+                    <div class="cell itemprice"><span><i>￥</i>12232.00</span></div>
+                    <div class="cell itemquantity">12</div>
+                    <div class="cell itemtotal">
+                        <span class="total"><i>￥</i>1132323.22</span>
+                    </div>
+                    <div class="cell itemdelete"></div>
+                </div>
+				<div class="shop-cart-row">
+                    <div class="cell itemname">
+                        	<div class="goods-item">
+							<div class="img fl">
+								<a href="" target="_blank" title="">
+									<img src="../images/good.jpg" alt="蓝莓咖啡和蓝灭咖啡">
+								</a>
+							</div>
+							<div class="info fl">
+								<a href="" target="_blank" title="" class="name">蓝莓咖啡和卡dsg斯蓝莓咖啡和卡斯</a>
+								<p class="spec">规格 550ml  成件规格 24瓶/件</p>
+							</div>
+						</div>
+                    </div>
+                    <div class="cell itemprice"><span><i>￥</i>12232.00</span></div>
+                    <div class="cell itemquantity">12</div>
+                    <div class="cell itemtotal">
+                        <span class="total"><i>￥</i>1132323.22</span>
+                    </div>
+                    <div class="cell itemdelete"></div>
+                </div>
             </div>
+			<div class="confirm-order-bottom">
+						<div class="total-price">
+							<span class="amount">共计99999商品</span> 合计<span class="price"><i>￥</i>88.88</span>
+						</div>
+						<span class="submit-order">提交订单</span>
+				</div>
             <!--购物车商品列表 end -->
 		</div>
 	</div>
