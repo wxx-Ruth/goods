@@ -2,7 +2,8 @@
     overflow: hidden;
     background: #fff;
     margin-bottom: 10px;
-    padding: 26px 20px 22px;
+    padding: 26px 20px 32px;
+    position: relative;
     .sales-title{
         color: $cgray;
     }
@@ -13,12 +14,20 @@
     }
     .single-item{
         padding: 0;
-        margin-bottom: 32px;
-    .img{
-        width: 250px;
-        height: 250px;
+        margin-bottom: 24px;
+            .name{
+                line-height: 24px;
+            }
+        .img{
+            width: 250px;
+            height: 250px;
+        }
     }
-}
+    .cell{
+        .spec{
+            line-height: 24px;
+        }
+    }
 }
 .pro-list-more{
     padding: 0 22px;
@@ -54,13 +63,24 @@
 }
 .list-more{
     width: 560px;
+    height: 310px;
     overflow: hidden;
 }
 .pro-goods-list{
     position: relative;
+    overflow: hidden;
     .shopping-car{
         position: absolute;
         right: 34px;
         bottom: 26px;
+    }
+}
+.total-price{
+    margin-left: 2px;
+    span{
+        padding: 0 50px 0 30px;
+        color: #ea0b0b;
+        font-size: 18px;
+        font-weight: 700;
     }
 }

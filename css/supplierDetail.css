@@ -69,6 +69,16 @@ body {
   font-size: 13px;
   line-height: 13px; }
 
+.round-rect {
+  border-radius: 25px;
+  line-height: 30px;
+  height: 30px;
+  border: 1px solid #ff7521;
+  color: #fff;
+  padding: 0 25px;
+  background-color: #ff7521;
+  display: inline-block; }
+
 .icon-arrow-right {
   vertical-align: middle;
   font-size: 16px; }
@@ -98,35 +108,48 @@ body {
     text-align: left; }
     .goods-item .info .amount {
       font-size: 13px;
-      color: #999; }
+      color: #999;
+      line-height: 20px; }
+      .goods-item .info .amount .line {
+        display: inline-block;
+        background: #c1c1c1;
+        height: 12px;
+        width: 1px;
+        margin: -4px 6px 0;
+        vertical-align: middle; }
   .goods-item .price {
     padding: 22px 0 0;
     color: #ea0b0b;
     font-size: 16px; }
-    .goods-item .price i {
+    .goods-item .price .price-n i {
       font-size: 12px;
-      margin-right: 3px;
       display: inline-block; }
   .goods-item .name {
     display: block;
     padding: 8px 0;
     color: #3c3c3c; }
+  .goods-item .spec {
+    color: #999; }
 
 .shop-topbar {
-  position: absolute;
-  top: 0;
   line-height: 58px;
   height: 58px;
-  background: rgba(0, 0, 0, 0.4); }
+  background: #ff6e1f; }
   .shop-topbar .topbar-item {
     float: left;
-    padding-right: 40px;
     color: #fff;
-    font-size: 16px; }
+    font-size: 16px;
+    width: 120px;
+    text-align: center; }
   .shop-topbar .topbar-logo {
-    margin: 8px 115px 8px 0;
+    margin: 10px 85px 8px 0;
     width: 80px;
     height: 42px; }
+
+.pos-top {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4); }
 
 .topbar-right {
   float: right;
@@ -148,6 +171,12 @@ body {
       height: 14px;
       margin-top: -7px;
       background: #bab5bb; }
+
+.yellow-top a.current, .yellow-top a:hover {
+  background: #ff4e1f; }
+
+.yellow-top .topbar-right .logo-out:before {
+  background: #fff; }
 
 .mod-img {
   background: url("../images/bg01.jpg") no-repeat;
@@ -200,7 +229,8 @@ body {
     padding: 0 25px;
     margin-top: 5px;
     font-size: 18px;
-    border-width: 2px; }
+    border-width: 2px;
+    background: transparent; }
 
 .shopnav-left {
   float: left;
@@ -278,38 +308,44 @@ body {
   overflow: hidden;
   zoom: 1;
   background: #fff; }
-  .list li, .list .cell {
+  .list li, .list .goods-item {
     float: left;
     padding: 24px 21px 30px; }
-    .list li .img, .list .cell .img {
+    .list li .img, .list .goods-item .img {
       width: 200px;
       height: 200px; }
-      .list li .img img, .list .cell .img img {
+      .list li .img img, .list .goods-item .img img {
         width: 100%;
         height: 100%; }
-    .list li .info, .list .cell .info {
+    .list li .info, .list .goods-item .info {
       padding-left: 6px;
       text-align: left; }
-    .list li .price, .list .cell .price {
+    .list li .price, .list .goods-item .price {
       padding: 22px 0 0;
       color: #ea0b0b;
       font-size: 16px; }
-      .list li .price i, .list .cell .price i {
+      .list li .price .price-n i, .list .goods-item .price .price-n i {
         font-size: 12px;
-        margin-right: 3px;
         display: inline-block; }
-    .list li .name, .list .cell .name {
+    .list li .name, .list .goods-item .name {
       display: block;
       padding: 8px 0;
       color: #3c3c3c; }
-    .list li .spec, .list .cell .spec {
+    .list li .spec, .list .goods-item .spec {
       color: #999; }
 
 .shop-info {
   padding: 28px 28px 0;
   background: #fff; }
   .shop-info .shop {
-    margin-right: 56px; }
+    border-radius: 20px;
+    border: 1px solid #f1f1f1;
+    width: 80px;
+    height: 80px; }
+  .shop-info .intro {
+    margin-left: 16px;
+    margin-right: 45px;
+    width: 160px; }
   .shop-info .shop-img {
     float: left;
     margin-right: 18px; }
@@ -325,24 +361,9 @@ body {
       color: #ff6e1f;
       font-size: 14px; }
   .shop-info .round-rect {
-    border-radius: 25px;
-    line-height: 32px;
-    height: 32px;
-    border: 1px solid #ff6e1f;
-    color: #fff;
-    padding: 0 25px;
     color: #ff6e1f;
-    margin-top: 18px; }
-
-.list .round-rect {
-  border-radius: 25px;
-  line-height: 30px;
-  height: 30px;
-  border: 1px solid #ff7521;
-  color: #fff;
-  padding: 0 25px;
-  background-color: #ff7521;
-  display: inline-block; }
+    margin-top: 18px;
+    background: transparent; }
 
 .goods-lr {
   background-color: #f3f3f3; }
@@ -654,7 +675,8 @@ body {
   overflow: hidden;
   background: #fff;
   margin-bottom: 10px;
-  padding: 26px 20px 22px; }
+  padding: 26px 20px 32px;
+  position: relative; }
   .sales-item .sales-title {
     color: #666; }
   .sales-item .time {
@@ -663,10 +685,14 @@ body {
     line-height: 24px; }
   .sales-item .single-item {
     padding: 0;
-    margin-bottom: 32px; }
+    margin-bottom: 24px; }
+    .sales-item .single-item .name {
+      line-height: 24px; }
     .sales-item .single-item .img {
       width: 250px;
       height: 250px; }
+  .sales-item .cell .spec {
+    line-height: 24px; }
 
 .pro-list-more {
   padding: 0 22px;
@@ -696,14 +722,68 @@ body {
 
 .list-more {
   width: 560px;
+  height: 310px;
   overflow: hidden; }
 
 .pro-goods-list {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .pro-goods-list .shopping-car {
     position: absolute;
     right: 34px;
     bottom: 26px; }
+
+.total-price {
+  margin-left: 2px; }
+  .total-price span {
+    padding: 0 50px 0 30px;
+    color: #ea0b0b;
+    font-size: 18px;
+    font-weight: 700; }
+
+.sticky {
+  position: fixed;
+  top: 90px;
+  z-index: 101; }
+
+.shopmenu-nav {
+  width: 130px;
+  border-right: 1px solid #ddd;
+  background-color: transparent;
+  padding: 0 10px 70px 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-left: -150px; }
+  .shopmenu-nav a {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 20px 15px 15px 0;
+    text-align: right;
+    color: #666;
+    font-size: 14px;
+    overflow: visible; }
+    .shopmenu-nav a.active {
+      color: #ff7521; }
+      .shopmenu-nav a.active:after {
+        font-family: "iconfont" !important;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\e64b";
+        background: 0 0;
+        font-size: 20px;
+        right: 0; }
+    .shopmenu-nav a:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -4px;
+      margin-top: -4px;
+      width: 8px;
+      height: 8px;
+      background-color: #ddd;
+      border-radius: 50%; }
 
 .footer-main {
   padding: 25px 45px 0;

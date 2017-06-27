@@ -2,19 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>添加供应商</title>
-    <link rel="stylesheet" href="../css/confirmOrder.css">
+	<meta charset="UTF-8">
+	<title>确认订单</title>
+	<link rel="stylesheet" href="../css/confirmOrder.css">
 </head>
 
 <body>
+	<!--顶部-->
+	<div class="mod-full shop-topbar">
+		<header class="grid-m1210 yellow-top">
+			<a href="/" target="_blank" class="topbar-item topbar-logo">
+				<img src="../images/xiehuo-logo.png" alt="写货宝"></a>
+			<a href="/" target="_blank" class="topbar-item">供应商</a>
+			<a href="" target="_blank" class="topbar-item">我的订单</a>
+			<a href="" target="_blank" class="topbar-item current">购物车</a>
+			<a href="" target="_blank" class="topbar-item">收藏商品</a>
+			<a href="" target="_blank" class="topbar-item">店铺中心</a>
+			<div class="topbar-right">
+				<!-- 登陆 -->
+				<span>les乐事拆弹超市</span><a href="javascript:;" class="logo-out">退出</a>
+				<!-- 登陆 end-->
+			</div>
+		</header>
+	</div>
+	<!--顶部 end-->
 
+	<!-- 购物车列表 -->
+	<div class="mod-full mod-gray">
+		<div class="grid-m1210 pt25b75">
+			<div class="order-info">
+				<h2 class="title">确定订单</h2>
+				<h4 class="name">店铺名称<span class="color-gray">好家乡小超市</span></h4>
+				<div class="address">
 
-    <div class="mod-full mod-gray">
-        <div class="grid-m1210">
-            <div class="shop-information">
+				</div>
+				<div class="checkout-way">
+					<h2 class="name">配送方式</h2>
+					<ul class="cf">
+						<li class="checkout-item active">
+							<p>送货上门</p>
+							<p class="color-mute" >供应商送货上门</p>
+						</li>
+						<li class="checkout-item">
+							<p>自提</p>
+							<p class="color-mute" >商家上门提货</p>
+						</li>
+					</ul>
+				</div>
+				<div class="checkout-way">
+					<h2 class="name">付款方式</h2>
+					<ul class="cf">
+						<li class="checkout-item active">
+							<p>货到付款</p>
+							<p class="color-mute" >送货上门后再支付</p>
+						</li>
+						<li class="checkout-item">
+							<p>网银转账</p>
+							<p class="color-mute" >待开通</p>
+						</li>
+					</ul>
+				</div>
+				<div class="checkout-way">
+					<h2 class="name">商家留言</h2>
+					<textarea class="message">
+					</textarea>
+				</div>
+			</div>
+			<div class="shop-information">
                 <a href="javascript:;">
                     <img src="http://fuss10.elemecdn.com/a/c8/1796ec76390e5fe5357a869fde250jpeg.jpeg?imageMogr2/thumbnail/190x190/format/webp/quality/85"
                         alt="">
@@ -103,8 +157,45 @@
 
             </div>
             <!--购物车商品列表 end -->
-        </div>
-    </div>
+		</div>
+	</div>
+	<!-- 购物车列表 end -->
+	<!-- 底部 -->
+	<footer class="mod-full">
+		<div class="grid-m1210">
+			<div class="footer-main cf">
+				<div class="links fl">
+					<a href="" target="_blank" class="f-16">关于写货</a>
+					<a href="" target="_blank" class="f-16">我是供应商</a>
+					<a href="" target="_blank" class="f-16">我要开店</a>
+					<a href="" target="_blank">公司介绍</a>
+					<a href="" target="_blank">申请供应商</a>
+					<a href="" target="_blank">申请商家</a>
+					<a href="" target="_blank">关于我们</a>
+				</div>
+				<div class="qrcode-lr fl">
+					<img src="../images/qrcode-m.jpg" alt="商家app">
+					<div class="qrcode-info fr">
+						<span>供应商APP</span>
+						<p>扫一扫，掌上供货管理</p>
+					</div>
+				</div>
+				<div class="qrcode-lr fr">
+					<img src="../images/qrcode-m.jpg" alt="供应商app">
+					<div class="qrcode-info fr">
+						<span>商家APP</span>
+						<p>扫一扫，写货更方便</p>
+					</div>
+				</div>
+			</div>
+			<p class="copyright">
+				© 2016—2017 XIEHUOBAO.COM　四川科技有限公司　京ICP备17009001号-1
+			</p>
+		</div>
+	</footer>
+
+	<!-- 底部 end -->
+
 </body>
 
 </html>

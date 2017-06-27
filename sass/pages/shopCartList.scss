@@ -1,0 +1,79 @@
+@import 'normalize.css';
+@import '../modules/common';
+@import '../modules/yellowTop';
+@import '../modules/supplierDetail/header';
+@import '../modules/indexList';
+@import '../modules/bottom';
+@import '../modules/sidebar';
+
+
+.cart-list{
+    .cart-item{
+        background: #fff;
+        margin-bottom: 60px;
+        padding-bottom: 36px;
+    }
+    .shop-info{
+        .info{
+            margin-left: 40px;
+        }
+        .shop-name{
+            padding: 0 20px 5px 5px;
+        }
+        .label{
+            display: inline-block;
+            background: #ff4736;
+            color: #fff;
+            padding:  0 4px;
+            margin-left: 12px;
+        }
+        p{
+            color: #3c3c3c;
+            font-size: 14px;
+            &.shop-des{
+                line-height: 24px;
+                .iconfont{
+                    color: $byellow;
+                    vertical-align: middle;
+                    font-size: 18px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .clear-cart{
+            font-size: $font-size-m;
+            color: $cgray;
+            margin-top: 15px;
+            margin-right: 12px;
+        }
+    }
+}
+
+.list-bottom{
+    border-top: 1px solid #e5e5e5;
+    margin: 0 28px;
+    position: relative;
+    .total-price{
+        margin-top: 40px;
+        color: $cgray;
+        span{
+            font-size: 16px;
+            color: #101010;
+            margin: 0 70px 0 15px;
+        }
+        .price{
+            color: #ea0b0b;
+            font-weight: 700;
+        }
+    }
+    .go-check{
+        position: absolute;
+        top: 26px;
+        right: 35px;
+        padding: 0 46px;
+        height: 33px;
+        line-height: 33px;
+        color: #fffefe;
+        font-size: 16px;
+    }
+}

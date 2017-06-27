@@ -1,0 +1,60 @@
+.shop-topbar{
+    line-height: 58px;
+    height: 58px;
+    background: $byellow;
+    .topbar-item{
+        float: left;
+        color: #fff;
+        font-size: $font-size-m;
+        width: 120px;
+        text-align: center;
+    }
+    .topbar-logo{
+        margin: 10px 85px 8px 0;
+        width: 80px;
+        height: 42px;
+    }
+}
+.pos-top{
+    position: absolute;
+    top:0;
+    background: rgba(0, 0, 0, 0.4);
+}
+.topbar-right{
+    float: right;
+    color: #fff;
+    font-size: $font-size-s;
+    span{
+        padding-right: 16px;
+        
+    }
+   .logo-out{
+        color: #fff;
+        padding-left: 14px;
+        box-sizing: border-box;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            left:0;
+            top: 50%;
+            width: 1px;
+            height: 14px;
+            margin-top: -7px;
+            background: #bab5bb;
+            
+        }
+    }
+}
+.yellow-top{
+    a{
+        &.current, &:hover{
+            background: #ff4e1f;
+        }
+    }
+    .topbar-right{
+        .logo-out:before{
+            background:  #fff;
+        }
+    }
+}

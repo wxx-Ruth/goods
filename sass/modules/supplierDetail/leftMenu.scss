@@ -1,0 +1,49 @@
+.sticky{
+    position: fixed;
+    top: 90px;
+    z-index: 101;
+  
+}
+.shopmenu-nav{
+    width: 130px;
+    border-right: 1px solid #ddd;
+    background-color: transparent;
+    padding: 0 10px 70px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: -150px;
+    a{
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 20px 15px 15px 0;
+        text-align: right;
+        color: $cgray;
+        font-size: 14px;
+        overflow: visible;
+        &.active{
+                color: #ff7521;
+            &:after{      
+                font-family:"iconfont" !important;
+                font-style:normal;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                content: "\e64b";
+                background: 0 0;
+                font-size: 20px;
+                right: 0;
+            }
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -4px;
+            margin-top: -4px;
+            width: 8px;
+            height: 8px;
+            background-color: #ddd;
+            border-radius: 50%;
+        }
+    }
+}

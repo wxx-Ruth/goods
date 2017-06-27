@@ -18,6 +18,7 @@
     margin: 0 auto;
     background: #fff;
     @include round-rect(30px, 60px, #ff7521);
+    border: 0;
 }
 
 .search-box .icon-search {

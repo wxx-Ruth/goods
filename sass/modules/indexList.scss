@@ -15,7 +15,7 @@
     overflow: hidden;
     zoom:1;
     background: #fff;
-    li, .cell{
+    li, .goods-item{
         float: left;
         padding: 24px 21px 30px;
         .img{
@@ -34,10 +34,11 @@
             padding: 22px 0 0;
             color: $red01;
             font-size: $font-size-m;
-            i{
-                font-size: 12px;
-                margin-right: 3px;
-                display: inline-block;
+            .price-n{
+                i{
+                    font-size: 12px;
+                    display: inline-block;
+                }
             }
         }
         .name{
@@ -54,7 +55,15 @@
     padding: 28px 28px 0;
     background: #fff;
     .shop{
-        margin-right: 56px;
+        border-radius: 20px;
+        border: 1px solid #f1f1f1;
+        width: 80px;
+        height: 80px;
+    }
+    .intro{
+        margin-left: 16px;
+        margin-right: 45px;
+        width: 160px;
     }
     .shop-img{
         float: left;
@@ -76,8 +85,8 @@
         }
     }
     .round-rect{
-       @include round-rect;
-       color: $byellow;
+        color: $byellow;
         margin-top: 18px;
+        background: transparent;
     }
 }
