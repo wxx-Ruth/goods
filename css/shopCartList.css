@@ -155,6 +155,24 @@ body {
     color: #fffefe;
     font-size: 16px; }
 
+.cover {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: -1130px;
+  left: 0;
+  right: 0;
+  z-index: 10; }
+  .cover .layer-main {
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 800px;
+    text-align: center; }
+
 .shop-topbar {
   line-height: 58px;
   height: 58px;

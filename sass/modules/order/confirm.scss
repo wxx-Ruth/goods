@@ -76,6 +76,11 @@
             display: inline-block;
             margin: 0 32px 0 20px;
         }
+        .tel{
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+        }
     }
 }
 
@@ -237,5 +242,27 @@
                 color: $gray-light;
             }
         }
+    }
+}
+.order-submit-success{
+    padding-top: 115px;
+    padding-bottom: 52px;
+    .loading{
+        height: 175px;
+    }
+    p{
+        margin-top: 10px;
+        color: $gray-light;
+    }
+    .look-order{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        color: $byellow;
+    }
+    a{
+        display: block;
+    }
+    .back-home{
+        color: #5b7dde;
     }
 }

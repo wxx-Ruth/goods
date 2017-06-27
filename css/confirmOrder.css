@@ -155,6 +155,24 @@ body {
     color: #fffefe;
     font-size: 16px; }
 
+.cover {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: -1130px;
+  left: 0;
+  right: 0;
+  z-index: 10; }
+  .cover .layer-main {
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 800px;
+    text-align: center; }
+
 .shop-topbar {
   line-height: 58px;
   height: 58px;
@@ -442,6 +460,10 @@ body {
     .shop-information .contact span {
       display: inline-block;
       margin: 0 32px 0 20px; }
+    .shop-information .contact .tel {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px; }
 
 .confirm-order-cart .shop-cart-row {
   padding: 0;
@@ -564,6 +586,23 @@ body {
         color: #ff6e1f; }
       .order-address dl dd.color-gray {
         color: #999; }
+
+.order-submit-success {
+  padding-top: 115px;
+  padding-bottom: 52px; }
+  .order-submit-success .loading {
+    height: 175px; }
+  .order-submit-success p {
+    margin-top: 10px;
+    color: #999; }
+  .order-submit-success .look-order {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #ff6e1f; }
+  .order-submit-success a {
+    display: block; }
+  .order-submit-success .back-home {
+    color: #5b7dde; }
 
 .footer-main {
   padding: 25px 45px 0;
