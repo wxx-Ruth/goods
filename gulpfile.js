@@ -1,9 +1,10 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var minifycss = require('gulp-minify-css');
 
 gulp.task('sass', function() {
     gulp.src('sass/pages/*.scss')
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(gulp.dest('./css'))
 });
 

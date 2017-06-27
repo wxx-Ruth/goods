@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/wxx-Ruth/goods#readme",
   "devDependencies": {
+    "gulp-minify-css": "^1.2.4",
     "gulp-sass": "^3.1.0"
   }
 }
