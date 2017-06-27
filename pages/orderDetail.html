@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>确认订单</title>
+	<title>订单详情</title>
 	<link rel="stylesheet" href="../css/order.css">
 </head>
 
@@ -37,9 +37,9 @@
 					<i class="iconfont icon-location fl">&#xe657;</i>
 					<dl>
 						<dt>收&nbsp; 货&nbsp;人</dt>
-						<dd>张点点 <a href="javascript:;" class="edit">修改</a></dd>
+						<dd>张点点</dd>
 						<dt>联系电话</dt>
-						<dd>12131333331<a href="javascript:;" class="edit">修改</a></dd>
+						<dd>12131333331</dd>
 					</dl>
 					<dl>
 						<dt>收货地址</dt>
@@ -49,32 +49,32 @@
 				<div class="checkout-way">
 					<h2 class="name">配送方式</h2>
 					<ul class="cf">
-						<li class="checkout-item active">
+						<li class="checkout-item">
 							<p>送货上门</p>
 							<p class="color-mute" >供应商送货上门</p>
 						</li>
-						<li class="checkout-item">
+						<!--<li class="checkout-item">
 							<p>自提</p>
 							<p class="color-mute" >商家上门提货</p>
-						</li>
+						</li>-->
 					</ul>
 				</div>
 				<div class="checkout-way">
 					<h2 class="name">付款方式</h2>
 					<ul class="cf">
-						<li class="checkout-item active">
+						<li class="checkout-item">
 							<p>货到付款</p>
 							<p class="color-mute" >送货上门后再支付</p>
 						</li>
-						<li class="checkout-item">
+						<!--<li class="checkout-item">
 							<p>网银转账</p>
 							<p class="color-mute" >待开通</p>
-						</li>
+						</li>-->
 					</ul>
 				</div>
 				<div class="checkout-way">
 					<h2 class="name">商家留言</h2>
-					<textarea class="message" name="message"></textarea>
+					<p class="leave-message">打包仔细，手册为问问</p>
 				</div>
 			</div>
 			<div class="shop-information">
@@ -217,26 +217,15 @@
                 </div>
             </div>
 			<div class="confirm-order-bottom">
-						<div class="total-price">
+						<div class="total-price fr">
 							<span class="amount">共计99999商品</span> 合计<span class="price"><i>￥</i>88.88</span>
 						</div>
-						<span class="submit-order">提交订单</span>
 				</div>
             <!--购物车商品列表 end -->
 		</div>
 	</div>
 	<!-- 购物车列表 end -->
-	<!-- 半透明弹窗 -->
-	<div class="cover">
-		<div class="layer-main order-submit-success">
-			<img src="../images/loading-car.gif" class="loading">
-			<p>订单已提交成功</p>
-			<p><span class="countdown">4s</span>...跳转订单列表</p>
-			<a href="javascript:;" class="look-order">查看订单列表&gt;</a>
-			<a href="javascript:;" class="back-home">返回首页&gt;</a>
-		</div>
-	</div>
-	<!-- 半透明弹窗 end -->
+
 	<!-- 底部 -->
 	<footer class="mod-full">
 		<div class="grid-m1210">
