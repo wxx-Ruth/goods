@@ -48,32 +48,3 @@
         }
     }
 }
-
-.list-bottom{
-    border-top: 1px solid #e5e5e5;
-    margin: 0 28px;
-    position: relative;
-    .total-price{
-        margin-top: 40px;
-        color: $cgray;
-        span{
-            font-size: 16px;
-            color: #101010;
-            margin: 0 70px 0 15px;
-        }
-        .price{
-            color: #ea0b0b;
-            font-weight: 700;
-        }
-    }
-    .go-check{
-        position: absolute;
-        top: 26px;
-        right: 35px;
-        padding: 0 46px;
-        height: 33px;
-        line-height: 33px;
-        color: #fffefe;
-        font-size: 16px;
-    }
-}
