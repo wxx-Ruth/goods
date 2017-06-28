@@ -1,11 +1,11 @@
+.order-title{
+    font-size: 18px;
+    color: #3c3c3c;
+    margin-bottom: 39px;
+}
 .order-info{
     padding: 45px 45px 60px;
     background: #fff;
-    .title{
-        font-size: 18px;
-        color: #3c3c3c;
-        margin-bottom: 39px;
-    }
     .name{
         font-size: $font-size-m;
         color: #5e5e5e;
@@ -265,5 +265,113 @@
     }
     .back-home{
         color: #5b7dde;
+    }
+}
+.detail-title{
+    margin-left: 45px;
+    margin-bottom: 15px;
+}
+// 订单详情
+.order-detail-progress{
+    background: #fff;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    position: relative;
+    .order-state{
+        border-right: 1px solid #eee;
+        text-align: center;
+        width: 280px;
+        box-sizing: border-box;
+        h4{
+            font-weight: 700;
+            color: #3c3c3c;
+            font-size: $font-size-m;
+            padding: 25px 0 75px;
+            span{
+                display: inline-block;
+                margin-left: 15px;
+            }
+        }
+        .state{
+            color: $byellow;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .print{
+            display: block;
+            margin-top: 50px;
+            margin-bottom: 95px;
+            color: #101010;
+            font-size: 13px;
+            .icon-print{
+                color: $gray-light;
+                vertical-align: middle;
+                margin-right: 5px;
+                display: inline-block;
+            }
+        }
+    }
+}
+.order-progress{
+    margin-left: 58px;
+    margin-top: 30px;
+    p{
+        color: $gray-light;
+        font-size: 13px;
+    }
+    .progress{
+        padding-top: 70px;
+        .pro-state{
+            float: left;
+            width: 120px;
+            padding: 0 25px;
+            color: #3c3c3c;
+            font-size: $font-size-m;
+                    text-align: center;
+            .iconfont{
+                display: block;
+                font-size: 50px;
+                color: $byellow;
+                line-height: 60px;
+                margin: 0 auto 25px;
+                
+            }
+            &.active{
+                .iconfont{
+                    border-radius: 50%;
+                    background: $byellow;
+                    color: #fff;
+                    width: 55px;
+                    height: 55px;
+                    margin-bottom: 30px;
+                }
+            }
+           span{
+               display: block;
+               line-height: 26px;
+               margin-top: 8px;
+           }
+        }
+    }
+}
+@mixin border-radius($borderColor, $borderW){
+    border: 1px solid $borderColor;
+    border-radius: $borderW;
+    -moz-border-radius: $borderW;
+    -webkit-border-radius: $borderW;
+}
+.rect-border-radius{
+    @include border-radius(#999, 4px);
+    color: #999;
+    line-height: 38px;
+    width: 148px;
+    text-align: center;
+    display: inline-block;
+    font-size: $font-size-m;
+    position: absolute;
+    top: 22px;
+    right: 48px;
+    &.cancel-order{
+        right: 230px;
     }
 }
