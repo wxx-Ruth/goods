@@ -353,8 +353,8 @@
             text-align: center;
             position: relative;
             &.dot-item:after{
-                    content: "…………";
-                    width: 50px;
+                    font-family: 'iconfont';
+                    content: "\e655\e655\e655\e655";
                     display: table;
                     position: absolute;
                     top: 8px;
@@ -362,6 +362,7 @@
                     font-size: 24px;
                     font-weight: 700;
                     left: -50px;
+                    letter-spacing: -8px;
             }
             .iconfont{
                 display: block;
