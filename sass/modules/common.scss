@@ -221,3 +221,46 @@ body{
         text-align: center;
     }
 }
+.dropbox{
+    position: absolute;
+    width: 187px;
+	height: 216px;
+	background-color: #fff;
+	-webkit-box-shadow: 1px 1px 8px rgba(62,62,62,.1);
+	-moz-box-shadow: 1px 1px 8px rgba(62,62,62,.1);
+	box-shadow: 1px 1px 8px rgba(62,62,62,.1);
+	border: solid 1px #eaeaea;
+    color: $cgray;
+    z-index: 10;
+    top: 90px;
+    text-align: center;
+    span{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: block;
+        color: $cgray;
+    }
+    .qrcode-img-b{
+        width: 155px;
+        height: 155px;
+    }
+}
+@mixin triangle($left, $top, $width, $color){
+    position: absolute;
+    content: "";
+    display: block;
+    border-style: solid;
+    z-index: 10;
+    border-color: transparent transparent $color;
+    left: $left;
+    top: $top;
+    border-width: $width;
+}
+.triangle-up-index{
+    &:before{
+        @include triangle(19px, -20px, 10px, #eaeaea);
+    }
+    &:after{
+        @include triangle(20px, -17px, 9px, #fff);
+    }
+}

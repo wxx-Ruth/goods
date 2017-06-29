@@ -46,7 +46,8 @@
 }
 .qrcode-tb{
     margin-left: 50px;
-    span{
+    position: relative;
+    span.name{
         color: $yellow02;
     }
     .qrcode-img{
