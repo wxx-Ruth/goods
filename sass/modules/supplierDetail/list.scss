@@ -32,25 +32,7 @@
         }
     }
 }
-.corner-action{
-    position: absolute;
-    top: 8px;
-    right: 2px;
-    text-align: center;
-    .icon-five-star{
-        color: #ebeeef;
-        font-size: 46px;
-    }
-    .icon-collected{
-        color: #ffae21;
-    }
-    span{
-        display: block;
-        color: $cgray;
-        font-size: 12px;
-        margin-top: -5px;
-    }
-}
+
 
 .detail-lists{
     position: relative;
