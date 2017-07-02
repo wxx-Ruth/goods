@@ -18,11 +18,11 @@ $border-f1: #f1f1f1;
 
 @font-face {
   font-family: 'iconfont';  /* project id 156314 */
-  src: url('http://at.alicdn.com/t/font_x7zqedahc7kfbt9.eot');
-  src: url('http://at.alicdn.com/t/font_x7zqedahc7kfbt9.eot?#iefix') format('embedded-opentype'),
-  url('http://at.alicdn.com/t/font_x7zqedahc7kfbt9.woff') format('woff'),
-  url('http://at.alicdn.com/t/font_x7zqedahc7kfbt9.ttf') format('truetype'),
-  url('http://at.alicdn.com/t/font_x7zqedahc7kfbt9.svg#iconfont') format('svg');
+  src: url('http://at.alicdn.com/t/font_m64avvmipt1q0k9.eot');
+  src: url('http://at.alicdn.com/t/font_m64avvmipt1q0k9.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_m64avvmipt1q0k9.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_m64avvmipt1q0k9.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_m64avvmipt1q0k9.svg#iconfont') format('svg');
 }
 .iconfont{
 	font-family: 'iconfont'!important;
@@ -38,6 +38,10 @@ body{
 }
 
 // 共用
+option{
+    padding: 0;
+    margin: 0;
+}
 .mod-full{
 	width: 100%;
 	background-color: #fff;
@@ -122,12 +126,46 @@ body{
 .w-906{
 	width: 906px;
 }
+.w-1000{
+    width: 1000px;
+    background: #fff;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
 .hide{
 	display: none!important;
+}
+.list-main{
+    overflow: hidden;
+    width: 100%;
+}
+h2.title{
+     font-size: 18px;
+     color: #2f2f2f;
+     padding: 25px 0 0 20px;
 }
 .goods-item{
         float: left;
         padding: 24px 21px 30px;
+        .corner-action{
+            position: absolute;
+            top: 8px;
+            right: 2px;
+            text-align: center;
+            .icon-five-star{
+                color: #ebeeef;
+                font-size: 46px;
+            }
+            .icon-collected{
+                color: #ffae21;
+            }
+            span{
+                display: block;
+                color: $cgray;
+                font-size: 12px;
+                margin-top: -5px;
+            }
+        }
         .img{
             width: 200px;
             height:200px;
@@ -234,6 +272,7 @@ body{
     z-index: 10;
     top: 90px;
     text-align: center;
+    display: none;
     span{
         margin-top: 20px;
         margin-bottom: 10px;
@@ -263,4 +302,19 @@ body{
     &:after{
         @include triangle(20px, -17px, 9px, #fff);
     }
+}
+.triangle-down{
+    &:before{
+        @include triangle(26px, -20px, 10px, #ff6e1f);
+    }
+    &:after{
+        @include triangle(27px, -17px, 9px, #fff);
+    }
+}
+.select-arrow{
+    padding-left: 24px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-right: 24px;
+    background: url(../images/select-arrow.png) no-repeat scroll 95% center #fff;
 }

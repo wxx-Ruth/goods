@@ -1,0 +1,126 @@
+.my-shop{
+    padding: 34px 35px 70px 56px;
+    color: $cgray;
+    position: relative;
+    .change-shop{
+        position: absolute;
+        top: -20px;
+        right: 22px;
+        color: #2f2f2f;
+    }
+     .dropbox{
+            top: 22px;
+            right: -155px;
+            border:  1px solid #fdc6a9;
+            width: 234px;
+            padding: 14px 20px 14px 6px;
+            box-sizing: border-box;
+            display: block;
+            text-align: left;
+            height: auto;
+            .shop-item{
+                display: block;
+                img{
+                    width: 36px;
+                    height: 36px;
+                    vertical-align: middle;
+                    border-radius: 50%;
+                }
+                span{
+                    display: inline-block;
+                    margin: 0;
+                }
+            }
+        }
+        .triangle-down{
+            &:before{
+                border-color: transparent transparent #fdc6a9;
+            }
+        }
+    .imgs{
+        margin-right: 42px;
+        text-align: center;
+        a.img{
+            display: block;
+           
+        }
+        p{
+            margin-top: 18px;
+            margin-bottom: 130px;
+        }
+    }
+    .img-big{
+            color: #4f78bb;
+            display: block;
+            margin: 15px 0 8px;
+        }
+    .shop-img{
+         width: 124px;
+         height: 124px;
+         border-radius: 50%;
+         border: 4px solid #f4f4f4;
+    }
+    .shop-name{
+        font-weight: 700;
+        .input{
+            font-weight: 700;
+            
+        }
+    }
+    .input{
+        height: 31px;
+        line-height: 31px;
+        padding-left: 8px;
+        width: 194px;
+        border: 1px solid #f1f1f1;
+        color: $cgray;
+    }
+    .textarea{
+        width: 605px;
+        height: 75px;
+        border: 1px solid #f1f1f1;
+        vertical-align: text-top;
+    }
+    .select-list{
+        width: 158px;
+    }
+    .btn{
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: $byellow;
+        color: #fff;
+        border-radius: 4px;
+        font-size: $font-size-m;
+    }
+    .shop-main{
+        float: left;
+        p{
+            margin-bottom: 16px;
+        }
+        .no-label{
+            margin-left: 70px;
+        }
+        .icon-user{
+            color: $byellow;
+            vertical-align: middle;
+            margin-left: 12px;
+            display: inline-block;
+        }
+        .set-address{
+            color: $cgray;
+            margin-bottom: 30px;
+            display: inline-block;
+            margin-top: 6px;
+            margin-left: 45px;
+        }
+        .btn-save{
+            margin-top: 70px;
+            margin-left: 210px;
+        }
+        .add-shop{
+            margin: 18px 0 70px 230px;
+        }
+    }
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心-订单列表</title>
+    <link rel="stylesheet" href="../css/orderList.css">
+</head>
+
+<body>
+    <!--顶部-->
+    <div class="mod-full shop-topbar">
+        <header class="grid-m1210 yellow-top">
+            <a href="/" target="_blank" class="topbar-item topbar-logo">
+                <img src="../images/xiehuo-logo.png" alt="写货宝"></a>
+            <a href="/" target="_blank" class="topbar-item">供应商</a>
+            <a href="" target="_blank" class="topbar-item">我的订单</a>
+            <a href="" target="_blank" class="topbar-item current">购物车</a>
+            <a href="" target="_blank" class="topbar-item">收藏商品</a>
+            <a href="" target="_blank" class="topbar-item">店铺中心</a>
+            <div class="topbar-right">
+                <!-- 登陆 -->
+                <span>les乐事拆弹超市</span><a href="javascript:;" class="logo-out">退出</a>
+                <!-- 登陆 end-->
+            </div>
+        </header>
+    </div>
+    <!--顶部 end-->
+
+    <div class="mod-full mod-gray">
+        <div class="grid-m1210">
+            <div class="list-main">
+                <!--左侧sidebar-->
+                <div class="user-sidebar">
+                    <dl>
+                        <dt><i class="iconfont">&#xe650;</i>我的订单</dt>
+                        <dd><a href="" class="title current">订单列表</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="iconfont">&#xe64b;</i>我的收藏</dt>
+                        <dd><a href="" class="title">收藏商品</a></dd>
+                        <dd><a href="" class="title">关注供应商</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="iconfont">&#xe651;</i>商家中心</dt>
+                        <dd><a href="" class="title">我的店铺</a></dd>
+                        <dd><a href="" class="title">账号管理</a></dd>
+                        <dd><a href="" class="title">安全中心</a></dd>
+                    </dl>
+                </div>
+                <!--左侧sidebar end-->
+                <div class="w-1000 order-list">
+                    <div class="search-info cf">
+                        <h2 class="fl">订单列表</h2>
+                        <input type="text" name="" class="search-input fl" placeholder="输入商品名称或商品条码 订单编号">
+                        <button type="submit" class="btn search-btn fl">订单搜索</button>
+                        <span class="more-condition">精简筛选条件<i class="iconfont icon-arrow-bottom">&#xe663;</i></span>
+                    </div>
+                    <ul class="search-condition">
+                        <li class="item">
+                            下单时间<input type="text" class="input">-<input type="text" class="input">
+                            <span class="time-all">
+                                <a href="" class="time">1天</a><a href="" class="time">7天</a><a href="" class="time">15天</a>
+                            </span> 供应商名称
+                            <input type="text" class="input">
+                        </li>
+                        <li class="item">
+                            交易状态
+                            <select name="" id="" class="input select-arrow">
+                                <option value="">全部状态</option>
+                            </select>
+                            <span class="distribution">配送方式<i class="iconfont icon-selected">&#xe64e;</i>送货上门<i class="iconfont icon-border">&#xe64d;</i>上门自提</span>
+                        </li>
+                    </ul>
+                    <!-- 订单列表 -->
+                    <div class="order-list-all">
+                        <div class="shop-cart-row">
+                            <div class="cell itemname">商品</div>
+                            <div class="cell itemquantity">数量</div>
+                            <div class="cell itemtotal">金额</div>
+                            <div class="cell itemprice">状态</div>
+                            <div class="cell itemoperate">操作</div>
+                        </div>
+                        <div class="order-list-item">
+                            <div class="shop-information">
+                                <div class="cell fl">
+                                    <span class="order-time">2017-05-11 12:32:45</span>
+                                    <span>订单号 1450151120000</span>
+                                </div>
+                                <div class="cell fl">
+                                    <img src="http://fuss10.elemecdn.com/a/c8/1796ec76390e5fe5357a869fde250jpeg.jpeg?imageMogr2/thumbnail/190x190/format/webp/quality/85"
+                                        alt="" class="shop-img">
+                                    <span class="name">大大批发厂大大批发大大批发厂大大批发</span>
+                                </div>
+                                <span class="contact fr">
+                                    <img src="../images/tel.png" class="tel">供应商电话<span>028-88515511</span>13521515418
+                                </span>
+                            </div>
+                            <div class="shop-cart-row">
+                                <div class="cell itemname">
+                                    <a href="" target="_blank" title="" class="img">
+                                        <img src="../images/good.jpg" alt="蓝莓咖啡和蓝灭咖啡">
+                                    </a>
+                                    <a href="" target="_blank" title="" class="img">
+                                        <img src="../images/good.jpg" alt="蓝莓咖啡和蓝灭咖啡">
+                                    </a>
+                                    <a href="" target="_blank" title="" class="img">
+                                        <img src="../images/good.jpg" alt="蓝莓咖啡和蓝灭咖啡">
+                                    </a>
+                                </div>
+                                <div class="cell itemquantity">120</div>
+                                <div class="cell itemtotal">
+                                    <span class="total">1132323.22</span>
+                                </div>
+                                <div class="cell itemstate"><span class="color-red">待审核</span></div>
+                                <div class="cell itemoperate"><button class="btn btn-shadow">订单加急</button><span>取消订单</span></div>
+                            </div>
+                        </div>
+                        <div class="order-list-item">
+                            <div class="shop-information">
+                                <div class="cell fl">
+                                    <span class="order-time">2017-05-11 12:32:45</span>
+                                    <span>订单号 1450151120000</span>
+                                </div>
+                                <div class="cell fl">
+                                    <img src="http://fuss10.elemecdn.com/a/c8/1796ec76390e5fe5357a869fde250jpeg.jpeg?imageMogr2/thumbnail/190x190/format/webp/quality/85"
+                                        alt="" class="shop-img">
+                                    <span class="name">大大批发厂大大批发大大批发厂大大批发</span>
+                                </div>
+                                <span class="contact fr">
+                                    <img src="../images/tel.png" class="tel">供应商电话<span>028-88515511</span>13521515418
+                                </span>
+                            </div>
+                            <div class="shop-cart-row">
+                                <div class="cell itemname">
+                                    <a href="" target="_blank" title="" class="img">
+                                        <img src="../images/good.jpg" alt="蓝莓咖啡和蓝灭咖啡">
+                                    </a>
+                                    <a href="" target="_blank" title="" class="img">
+                                        <img src="../images/good.jpg" alt="蓝莓咖啡和蓝灭咖啡">
+                                    </a>
+                                    <a href="" target="_blank" title="" class="img">
+                                        <img src="../images/good.jpg" alt="蓝莓咖啡和蓝灭咖啡">
+                                    </a>
+                                </div>
+                                <div class="cell itemquantity">120</div>
+                                <div class="cell itemtotal">
+                                    <span class="total">1132323.22</span>
+                                </div>
+                                <div class="cell itemstate"><span class="color-red">待审核</span></div>
+                                <div class="cell itemoperate"><button class="btn">订单加急</button></div>
+                            </div>
+                        </div>
+                        <div class="order-list-item">
+                            <div class="shop-information">
+                                <div class="cell fl">
+                                    <span class="order-time">2017-05-11 12:32:45</span>
+                                    <span>订单号 1450151120000</span>
+                                </div>
+                                <div class="cell fl">
+                                    <img src="http://fuss10.elemecdn.com/a/c8/1796ec76390e5fe5357a869fde250jpeg.jpeg?imageMogr2/thumbnail/190x190/format/webp/quality/85"
+                                        alt="" class="shop-img">
+                                    <span class="name">大大批发厂大大批发大大批发厂大大批发</span>
+                                </div>
+                                <span class="contact fr">
+                                    <img src="../images/tel.png" class="tel">供应商电话<span>028-88515511</span>13521515418
+                                </span>
+                            </div>
+                            <div class="shop-cart-row">
+                                <div class="cell itemname">
+                                    <a href="" target="_blank" title="" class="img">
+                                        <img src="../images/good.jpg" alt="蓝莓咖啡和蓝灭咖啡">
+                                    </a>
+                                    <a href="" target="_blank" title="" class="img">
+                                        <img src="../images/good.jpg" alt="蓝莓咖啡和蓝灭咖啡">
+                                    </a>
+                                    <a href="" target="_blank" title="" class="img">
+                                        <img src="../images/good.jpg" alt="蓝莓咖啡和蓝灭咖啡">
+                                    </a>
+                                </div>
+                                <div class="cell itemquantity">120</div>
+                                <div class="cell itemtotal">
+                                    <span class="total">1132323.22</span>
+                                </div>
+                                <div class="cell itemstate"><span class="color-green">已发货</span></div>
+                                <div class="cell itemoperate"><button class="btn">订单加急</button><button class="btn btn-yellow">确认收货</button></div>
+                            </div>
+                        </div>
+                        <div class="order-list-item">
+                            <div class="shop-information">
+                                <div class="cell fl">
+                                    <span class="order-time">2017-05-11 12:32:45</span>
+                                    <span>订单号 1450151120000</span>
+                                </div>
+                                <div class="cell fl">
+                                    <img src="http://fuss10.elemecdn.com/a/c8/1796ec76390e5fe5357a869fde250jpeg.jpeg?imageMogr2/thumbnail/190x190/format/webp/quality/85"
+                                        alt="" class="shop-img">
+                                    <span class="name">大大批发厂大大批发大大批发厂大大批发</span>
+                                </div>
+                                <span class="contact fr">
+                                    <img src="../images/tel.png" class="tel">供应商电话<span>028-88515511</span>13521515418
+                                </span>
+                            </div>
+                            <div class="shop-cart-row">
+                                <div class="cell itemname">
+                                    <a href="" target="_blank" title="" class="img">
+                                        <img src="../images/good.jpg" alt="蓝莓咖啡和蓝灭咖啡">
+                                    </a>
+                                    <a href="" target="_blank" title="" class="img">
+                                        <img src="../images/good.jpg" alt="蓝莓咖啡和蓝灭咖啡">
+                                    </a>
+                                    <a href="" target="_blank" title="" class="img">
+                                        <img src="../images/good.jpg" alt="蓝莓咖啡和蓝灭咖啡">
+                                    </a>
+                                </div>
+                                <div class="cell itemquantity">120</div>
+                                <div class="cell itemtotal">
+                                    <span class="total">1132323.22</span>
+                                </div>
+                                <div class="cell itemstate"><span class="color-yellow">已发货</span></div>
+                                <div class="cell itemoperate"><button class="btn">删除订单</button><button class="btn btn-yellow">再次购买</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 订单列表 end -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer class="mod-full">
+        <div class="grid-m1210">
+            <div class="footer-main cf">
+                <div class="links fl">
+                    <a href="" target="_blank" class="f-16">关于写货</a>
+                    <a href="" target="_blank" class="f-16">我是供应商</a>
+                    <a href="" target="_blank" class="f-16">我要开店</a>
+                    <a href="" target="_blank">公司介绍</a>
+                    <a href="" target="_blank">申请供应商</a>
+                    <a href="" target="_blank">申请商家</a>
+                    <a href="" target="_blank">关于我们</a>
+                </div>
+                <div class="qrcode-lr fl">
+                    <img src="../images/qrcode-m.jpg" alt="商家app">
+                    <div class="qrcode-info fr">
+                        <span>供应商APP</span>
+                        <p>扫一扫，掌上供货管理</p>
+                    </div>
+                </div>
+                <div class="qrcode-lr fr">
+                    <img src="../images/qrcode-m.jpg" alt="供应商app">
+                    <div class="qrcode-info fr">
+                        <span>商家APP</span>
+                        <p>扫一扫，写货更方便</p>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">
+                © 2016—2017 XIEHUOBAO.COM　四川科技有限公司　京ICP备17009001号-1
+            </p>
+        </div>
+    </footer>
+
+    <!-- 底部 end -->
+
+</body>
+
+</html>

@@ -55,6 +55,11 @@
         margin-top: 8px;
         width: 54px;
     }
+    &:hover{
+        .dropbox{
+            display: block;
+        }
+    }
 }
 .nav-list{
     overflow: hidden;

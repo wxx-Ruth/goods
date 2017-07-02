@@ -1,0 +1,28 @@
+.user-sidebar{
+    width: 192px;
+    padding: 10px 0 20px 18px;
+    float: left;
+    dl{
+        padding-top: 25px;
+        dt{
+            font-size: 18px;
+            color: #101010;
+            .iconfont{
+                color: #c5c5c5;
+                font-size: 26px;
+                padding-right: 16px;
+                vertical-align: middle;
+            }
+        }
+        dd{
+             padding-left: 40px;
+             .title{
+                color: $cgray;
+                line-height: 24px;
+                &.current, &:hover{
+                    color: $byellow;
+                }
+             }
+        }
+    }
+}

@@ -67,6 +67,10 @@
         font-size: $font-size-m;
         color: #5e5e5e;
         margin-left: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 204px;
     }
     .contact{
         float: right;
@@ -95,7 +99,7 @@
             .cell{
                 font-size: $font-size;
                 color: $gray-light;
-                &.itemdelete{
+                &.itemoperate{
                     visibility: hidden;
                 }
             }
@@ -157,7 +161,7 @@
                 }
             
             }
-            &.itemdelete{
+            &.itemoperate{
                 width: 15%;
                 color: $gray-light;
                 .icon-delete{
@@ -321,6 +325,7 @@
         height: 187px;
         padding: 0 18px;
         right: -14px;
+        display: block;
         span{
             font-weight: 700;
             margin-top: 30px;
@@ -354,7 +359,7 @@
             position: relative;
             &.dot-item:after{
                     font-family: 'iconfont';
-                    content: "\e655\e655\e655\e655";
+                    content: "············";
                     display: table;
                     position: absolute;
                     top: 8px;
@@ -362,7 +367,7 @@
                     font-size: 24px;
                     font-weight: 700;
                     left: -50px;
-                    letter-spacing: -8px;
+                    letter-spacing: -4px;
             }
             .iconfont{
                 display: block;
@@ -425,15 +430,6 @@
 	box-shadow: 3px 4px 5px rgba(0,0,0,.21);
 }
 
-
-.triangle-down{
-    &:before{
-        @include triangle(26px, -20px, 10px, #ff6e1f);
-    }
-    &:after{
-        @include triangle(27px, -17px, 9px, #fff);
-    }
-}
 .cyellow{
     border-color: $byellow;
     color: $byellow;
