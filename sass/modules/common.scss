@@ -147,25 +147,6 @@ h2.title{
 .goods-item{
         float: left;
         padding: 24px 21px 30px;
-        .corner-action{
-            position: absolute;
-            top: 8px;
-            right: 2px;
-            text-align: center;
-            .icon-five-star{
-                color: #ebeeef;
-                font-size: 46px;
-            }
-            .icon-collected{
-                color: #ffae21;
-            }
-            span{
-                display: block;
-                color: $cgray;
-                font-size: 12px;
-                margin-top: -5px;
-            }
-        }
         .img{
             width: 200px;
             height:200px;
@@ -259,6 +240,25 @@ h2.title{
         text-align: center;
     }
 }
+ .corner-action{
+            position: absolute;
+            top: 8px;
+            right: 2px;
+            text-align: center;
+            .icon-five-star{
+                color: #ebeeef;
+                font-size: 46px;
+            }
+            .icon-collected{
+                color: #ffae21;
+            }
+            span{
+                display: block;
+                color: $cgray;
+                font-size: 12px;
+                margin-top: -5px;
+            }
+        }
 .dropbox{
     position: absolute;
     width: 187px;
@@ -317,4 +317,7 @@ h2.title{
     -webkit-appearance: none;
     padding-right: 24px;
     background: url(../images/select-arrow.png) no-repeat scroll 95% center #fff;
+}
+.oh, .detail-menu{
+    overflow: hidden;
 }
