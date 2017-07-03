@@ -8,9 +8,10 @@
         right: 22px;
         color: #2f2f2f;
     }
+
      .dropbox{
-            top: 22px;
-            right: -155px;
+            top: 12px;
+            right: -134px;
             border:  1px solid #fdc6a9;
             width: 234px;
             padding: 14px 20px 14px 6px;
@@ -20,15 +21,22 @@
             height: auto;
             .shop-item{
                 display: block;
+                overflow: hidden;
+                line-height: 36px;
                 img{
                     width: 36px;
                     height: 36px;
                     vertical-align: middle;
                     border-radius: 50%;
+                    float: left;
                 }
                 span{
-                    display: inline-block;
-                    margin: 0;
+                    float: left;
+                    width: 158px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    margin: 0 0 0 10px;
                 }
             }
         }
@@ -42,14 +50,17 @@
         text-align: center;
         a.img{
             display: block;
-           
+            position: relative;
+            &:hover .upload-img{
+                display: block;
+            }
         }
-        p{
+        .touxiang{
             margin-top: 18px;
             margin-bottom: 130px;
         }
     }
-    .img-big{
+    .color-blue{
             color: #4f78bb;
             display: block;
             margin: 15px 0 8px;
@@ -80,9 +91,11 @@
         height: 75px;
         border: 1px solid #f1f1f1;
         vertical-align: text-top;
+        padding: 8px;
     }
     .select-list{
         width: 158px;
+        margin-left: -3px;
     }
     .btn{
         width: 100px;
@@ -93,6 +106,9 @@
         color: #fff;
         border-radius: 4px;
         font-size: $font-size-m;
+    }
+    .input-long{
+        width: 375px;
     }
     .shop-main{
         float: left;
@@ -121,6 +137,40 @@
         }
         .add-shop{
             margin: 18px 0 70px 230px;
+        }
+    }
+}
+.upload-img{
+    background: rgba(0,0,0,0.6);
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    color: #fff;
+    text-align: center;
+    display: none;
+    .iconfont{
+        font-size: 54px;
+        display: block;
+        margin-top: 20px;
+        line-height: 48px;
+    }
+    span{
+        font-size: 18px;
+        color: #fffefe;
+    }
+}
+
+.add-shop{
+
+    .shop-img{
+        background: #d1d1d1;
+        line-height: 132px;
+        .iconfont{
+            font-size: 92px;
+            color: #fff;
         }
     }
 }

@@ -144,6 +144,9 @@ h2.title{
      color: #2f2f2f;
      padding: 25px 0 0 20px;
 }
+.fn-16{
+    font-size: $font-size-m;
+}
 .goods-item{
         float: left;
         padding: 24px 21px 30px;
@@ -320,4 +323,24 @@ h2.title{
 }
 .oh, .detail-menu{
     overflow: hidden;
+}
+.btn{
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto 12px;
+}
+.btn-shadow{
+    -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.21);
+    -moz-box-shadow: 0 5px 5px rgba(0,0,0,.21);
+    box-shadow: 0 5px 5px rgba(0,0,0,.21);
+}
+.btn-yellow{
+    border-color: $byellow;
+    color: $byellow;
 }

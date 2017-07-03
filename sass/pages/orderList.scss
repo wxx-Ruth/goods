@@ -113,26 +113,6 @@
     .order-list-item{
         border: 1px solid #ebebeb;
         margin-bottom: 10px;
-        .btn{
-            width: 90px;
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
-            background-color: #fff;
-            border: 1px solid #e6e6e6;
-            display: block;
-            cursor: pointer;
-            margin: 0 auto 12px;
-        }
-        .btn-shadow{
-            -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.21);
-            -moz-box-shadow: 0 5px 5px rgba(0,0,0,.21);
-            box-shadow: 0 5px 5px rgba(0,0,0,.21);
-        }
-        .btn-yellow{
-            border-color: $byellow;
-            color: $byellow;
-        }
     }
     .shop-cart-row{
         box-sizing: border-box;

@@ -86,3 +86,21 @@
  }
 
  @import '../modules/usercenter/myShop';
+
+
+ .account-manager{
+     position: relative;
+     margin-bottom: 50px;
+    .btn{
+        width: 80px;
+        color: $gray-light;
+    }
+    .btn-yellow{
+        color: $byellow;
+    }
+     .add-acount{
+         position: absolute;
+         top: 14px;
+         right: 48px;
+     }
+ }
