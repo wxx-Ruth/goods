@@ -42,6 +42,7 @@ option{
     padding: 0;
     margin: 0;
 }
+select::-ms-expand { display: none; }
 .mod-full{
 	width: 100%;
 	background-color: #fff;
