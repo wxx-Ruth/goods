@@ -48,7 +48,7 @@
     }
 }
 .yellow-top{
-    a{
+    & > a{
         &.current, &:hover{
             background: #ff4e1f;
         }
