@@ -22,12 +22,13 @@
             font-size: 14px;
         }
         .input{
-            width: 325px;
+            width: 310px;
             height: 40px;
             line-height: 40px;
             margin-left: 15px;
             border-color: #dbdbdb;
             color: #c2c2c2;
+            padding-left: 15px;
         }
         .btn-save{
             width: 250px;
@@ -58,7 +59,7 @@
         display: inline-block;
         color: #232323;
         font-size: 18px;
-        &:hover{
+        &:hover, &.active{
             color: #ff9600;
         }
     }
