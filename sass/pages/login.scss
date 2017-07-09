@@ -11,28 +11,55 @@
         padding-top: 120px;
         margin-left: 660px;
         margin-top: 0;
+        font-size: 18px;
+        p{
+            margin-bottom: 30px;
+        }
         .txt-warn{
             color: #f02525;
             margin-left: 104px;
             margin-bottom: 10px;
+            font-size: 14px;
         }
         .input{
             width: 325px;
             height: 40px;
             line-height: 40px;
             margin-left: 15px;
+            border-color: #dbdbdb;
+            color: #c2c2c2;
         }
         .btn-save{
             width: 250px;
-            height: 40px;
+            height: 46px;
             background: #ff9600;
             margin-left: 80px;
+            font-size: 18px;
         }
+    }
+    p.info{
+        margin-top: 80px;
+        margin-left: 45px;
+        color: $cgray;
+        line-height: 37px;
+        font-size: 18px;
     }
     h2.title{
         font-size: 25px;
         font-weight: 700;
         color: $cgray;
         padding: 0 0 30px;
+    }
+}
+.bottom-info{
+    margin-top:44px;
+    a{
+        margin: 0 40px 0 80px;
+        display: inline-block;
+        color: #232323;
+        font-size: 18px;
+        &:hover{
+            color: #ff9600;
+        }
     }
 }
