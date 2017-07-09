@@ -1,0 +1,40 @@
+@import 'normalize.css';
+@import '../modules/common';
+@import '../modules/yellowTop';
+@import '../modules/login/blackTop';
+@import '../modules/bottom';
+
+.black-top{
+    .mr{
+        margin-right: 315px;
+    }
+    .login-regist{
+        color: #bc2d2d;
+        width: 165px;
+	    height: 40px;
+        margin-top: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        background-color: #ffde00;
+        text-align: center;
+        line-height: 40px;
+        a{
+            color: #bc2d2d;
+            font-size: 16px;
+        }
+        .logo-out:before{
+            background: #bc2d2d;
+        }
+    }
+}
+.mod-black{
+    background: #252525;
+}
+.product-footer{
+    .links{
+        a{
+            color: #fff;
+        }
+    }
+}

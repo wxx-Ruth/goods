@@ -83,3 +83,20 @@
         margin-left: 0;
     }
 }
+.register-main{
+    .bottom-info{
+        a{
+            margin: 0 45px 0 0;
+            color: #ff8400;
+        }
+    }
+    .pwd-by-icon{
+        position: relative;
+        .iconfont{
+            position: absolute;
+            left: 384px;
+            top: 10px;
+            z-index: 10;
+        }
+    }
+}
