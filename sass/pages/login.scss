@@ -30,11 +30,18 @@
             color: #c2c2c2;
             padding-left: 15px;
         }
+        .validate-code{
+            width: 165px;
+        }
+        .get-code{
+            margin-left: 38px;
+            letter-spacing: 0;
+        }
         .btn-save{
             width: 250px;
             height: 46px;
             background: #ff9600;
-            margin-left: 80px;
+            margin-left: 85px;
             font-size: 18px;
         }
     }
@@ -50,6 +57,10 @@
         font-weight: 700;
         color: $cgray;
         padding: 0 0 30px;
+        &>span{
+            font-weight: 400;
+            font-size: 18px;
+        }
     }
 }
 .bottom-info{
@@ -62,5 +73,13 @@
         &:hover, &.active{
             color: #ff9600;
         }
+    }
+}
+.editpwd-main, .register-main{
+    .new-letter{
+        letter-spacing: 6.5px;
+    }
+    .input-list .input{
+        margin-left: 0;
     }
 }
