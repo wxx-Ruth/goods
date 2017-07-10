@@ -1,2 +1,16 @@
 @import './personalCenter';
 @import '../modules/login/blackTop';
+.input-list {
+    padding-top: 20px;
+}
+
+h2.title {
+    font-size: 25px;
+    font-weight: 700;
+    color: $cgray;
+    padding: 0 0 30px;
+    span {
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
