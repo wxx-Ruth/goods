@@ -119,9 +119,6 @@
             margin-left: -3px;
             width: 230px;
         }
-        .btn-save{
-                margin-top: 210px;
-        }
         .go-back{
             margin: 20px 0 100px;
         }
@@ -132,6 +129,21 @@
      .add-acount-input .input-list, .edit-acount-input .input-list{
          margin-left: 220px;
          text-align: left;
+     }
+ }
+ .add-acount-first-input{
+     .validate-code{
+         width: 96px;
+     }
+     .get-code{
+         margin-top: 0;
+         display: inline-block;
+         height: 30px;
+         line-height: 30px;
+         width: 92px;
+         margin-left: 10px;
+         letter-spacing: 0;
+         font-size: 14px;
      }
  }
 //安全中心

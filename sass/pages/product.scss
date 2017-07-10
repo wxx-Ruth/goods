@@ -33,8 +33,15 @@
 }
 .product-footer{
     .links{
+        border: 0 none;
+        width: 628px;
+        margin: 0 auto;
         a{
             color: #fff;
+            margin:  0 71px 10px;
+            &.f-16{
+                margin: 0 62px 10px 71px;
+            }
         }
     }
 }

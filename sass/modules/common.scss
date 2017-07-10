@@ -37,6 +37,9 @@ body{
 	font-size: 14px;
 	font-family: Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
 }
+html,body{
+    height: 100%;
+}
 
 // 共用
 option{
@@ -230,7 +233,7 @@ h2.title{
     background-color: rgba(0,0,0,0.6);
     position: absolute;
     top: 0;
-    bottom: -1130px;
+    bottom: 0;
     left: 0;
     right: 0;
     z-index: 10;
@@ -413,4 +416,21 @@ h2.title{
     right: 46px;
     top: 32px;
     color: $cgray;
+}
+.ml300 {
+    margin-left: 300px;
+}
+.mt210{
+    margin-top: 210px;
+}
+.txt-warn {
+    color: #f02525;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.txt-tip{
+    color: $gray-light;
+    margin: 65px 0;
+    font-size: 13px;
 }

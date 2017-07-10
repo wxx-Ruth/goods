@@ -1,15 +1,2 @@
-@import 'normalize.css';
-@import '../modules/common';
-@import '../modules/bottom';
 @import './personalCenter';
 @import '../modules/login/blackTop';
-.ml300 {
-    margin-left: 300px;
-}
-
-.txt-warn {
-    color: #f02525;
-    margin-left: 200px;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
