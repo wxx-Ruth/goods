@@ -45,3 +45,102 @@
         }
     }
 }
+.mod-blue{
+    background-color: #3094f9;
+}
+.mod-gray-light{
+    background-color: #f4f4f4;
+}
+.mod-blue-light{
+    background-color: #ddedfc;
+}
+.product-intro01{
+    background: url(../images/product-01.jpg) right center no-repeat;
+    height: 525px;
+    color: #fff;
+    .intro{
+      padding: 112px 0 0 150px;
+        .title{
+            margin-bottom: 45px;
+            font-size: 24px;
+        }
+        p{
+            font-size: 18px;
+            width: 398px;
+            line-height: 36px;
+            text-align: justify;
+        }
+    }
+}
+.product-intro02{
+    background: url(../images/product-02.jpg) left center no-repeat;
+    height: 600px;
+    position: relative;
+    .intro{
+      width: 545px;
+      position: absolute;
+      top: 66px;
+      right: 0;
+        .title{
+            margin-bottom: 30px;
+            font-size: 20px;
+            color: #3394f6;
+            margin-left: 10px;
+        }
+        p{
+            line-height: 36px;
+            text-align: justify;
+            color: #6f6f6f;
+            &>span{
+                display: inline-block;
+                background-color: #3394f6;
+                color: #fff;
+                height: 24px;
+                line-height: 24px;
+                text-align: center;
+                padding: 0 5px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+.product-intro03{
+    background: url(../images/product-03.png) right center no-repeat;
+    height: 420px;
+    position: relative;
+    .intro{
+      position: absolute;
+      top: 128px;
+      left: 39px;
+      color: #4078dc;
+      font-size: 20px;
+        .title{
+            font-weight: 700;
+        }
+        p{
+            line-height: 36px;
+            text-align: justify;
+        }
+    }
+}
+.product-intro04{
+    background: url(../images/login-bg.jpg) 70px 32px no-repeat;
+    height: 606px;
+    position: relative;
+    .intro{
+      position: absolute;
+      top: 70px;
+      right: 0;
+      font-size: 20px;
+        .title{
+            font-weight: 700;
+        }
+        p{
+            line-height: 36px;
+            text-align: justify;
+        }
+    }
+}
