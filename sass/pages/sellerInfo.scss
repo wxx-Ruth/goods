@@ -1,9 +1,5 @@
 @import './personalCenter';
 @import '../modules/login/blackTop';
-.input-list {
-    padding-top: 20px;
-}
-
 h2.title {
     font-size: 25px;
     font-weight: 700;
@@ -13,4 +9,27 @@ h2.title {
         font-weight: 400;
         font-size: 18px;
     }
+}
+
+.my-shop {
+    .shop-main {
+        .txt-warn {
+            color: #f02525;
+            margin-left: 240px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .btn-save {
+            width: 250px;
+            height: 46px;
+            background: #ff9600;
+            margin-left: 170px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    }
+}
+
+.color-gray {
+    color: #666;
 }
