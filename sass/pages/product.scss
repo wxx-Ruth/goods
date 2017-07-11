@@ -36,6 +36,7 @@
         border: 0 none;
         width: 628px;
         margin: 0 auto;
+        padding-bottom: 0;
         a{
             color: #fff;
             margin:  0 71px 10px;
@@ -220,7 +221,6 @@
     height: 628px;
     .intro{
         margin: 0 118px;
-        overflow: hidden;
     }
     .shop-price-item{
         float: left;
@@ -231,6 +231,9 @@
         background-color: #fff;
         margin: 70px 82px 0;
         text-align: center;
+        -webkit-box-shadow: 0 8px 29px rgba(0,0,0,.1);
+	    -moz-box-shadow: 0 8px 29px rgba(0,0,0,.1);
+	    box-shadow: 0 8px 29px rgba(0,0,0,.1);
         span, .price{
             color: $cgray;
             font-size: 18px;
@@ -256,9 +259,79 @@
             font-size: 24px;
             border-radius: 30px;
             border: 0 none;
+            cursor: pointer;
         }
         .color-bg{
             background-color: #3094f9;
         }
+        .color-yellow{
+            color: #ff6600;
+        }
+    }
+}
+.product-download{
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 65px;
+    margin-top: 28px;
+    p{
+        margin-bottom: 18px;
+    }
+}
+.fixed-top{
+    background-color: #fff;
+    color: #101010;
+    -webkit-box-shadow: 0 6px 5px rgba(0,0,0,.16);
+	-moz-box-shadow: 0 6px 5px rgba(0,0,0,.16);
+	box-shadow: 0 6px 5px rgba(0,0,0,.16);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    .topbar-item{
+        color: #101010;
+        &:hover, &.acitve{
+            color: #1a81d0;
+        }
+    }
+}
+.login-or-regist{
+    .layer-main{
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+    }
+    .name{
+        color: #3a8dd8;
+        font-size: 20px;
+        display: block;
+        margin: 25px 0 12px;
+    }
+    .shop-intro-item{
+        width: 190px;
+        margin: 76px 14px 76px 134px;
+        .shop-head{
+            margin: 0 25px;
+        }
+    }
+    .welcome{
+        font-size: 16px;
+        color: #101010;
+        margin-bottom: 80px;
+    }
+    .btn-shop{
+        width: 190px;
+        height: 58px;
+        line-height: 58px;
+        background-color: #58a1e3;
+        color: #fff;
+        font-size: 22px;
+        margin-top: 50px;
+        display: block;
+    }
+    .btn-yellow{
+        background-color: #ffde00;
+        color: #d72125;
     }
 }
