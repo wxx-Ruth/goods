@@ -349,6 +349,7 @@
     }
     .progress{
         padding-top: 70px;
+        overflow: hidden;
         .pro-state{
             float: left;
             width: 120px;
@@ -357,17 +358,14 @@
             font-size: $font-size-m;
             text-align: center;
             position: relative;
-            &.dot-item:after{
-                    font-family: 'iconfont';
-                    content: "············";
-                    display: table;
+            .dot-item{
+                    background: url(../images/dot.png) no-repeat;
                     position: absolute;
-                    top: 8px;
-                    color: #fc9b67;
-                    font-size: 24px;
-                    font-weight: 700;
+                    top: 18px;
                     left: -50px;
-                    letter-spacing: -4px;
+                    display: block;
+                    width: 97px;
+                    height: 4px;
             }
             .iconfont{
                 display: block;
@@ -395,11 +393,14 @@
         }
     }
     .cancel{
-        .pro-state .iconfont, .pro-state.dot-item:after{
+        .pro-state .iconfont{
             color: $cgray;
         }
         .pro-state.active .iconfont{
             background: $cgray;
+        }
+        .pro-state .dot-item{
+             background-image: url(../images/gray-dot.png);
         }
     }
 }

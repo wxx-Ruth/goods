@@ -231,7 +231,7 @@ h2.title{
 }
 .cover{
     background-color: rgba(0,0,0,0.6);
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -383,6 +383,7 @@ h2.title{
 .color-yellow{
     color: #ff8400;
 }
+
 .new-letter{
     letter-spacing: 3px;
 }

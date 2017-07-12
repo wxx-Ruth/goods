@@ -43,3 +43,19 @@
     color: $gray-light;
     font-size: $font-size-s;
 }
+.new-footer{
+    .footer-main{
+        padding-top: 70px;
+        padding-left: 165px;
+        .links{
+            margin-top: 5px;
+        }
+        .qrcode-lr{
+            margin-top: 0;
+            img.qr-img{
+                width: 185px;
+                height: 185px;
+            }
+        }
+    }
+}

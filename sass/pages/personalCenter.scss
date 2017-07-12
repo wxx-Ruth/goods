@@ -75,15 +75,19 @@
         line-height: 24px;
     }
 }
+// 字体颜色
 .color-green{
     color: #71b247;
 }
- .color-yellow{
+.color-yellow{
      color: $byellow;
- }
- .color-red{
+}
+.color-red{
      color: #e21313;
- }
+}
+.color-gray {
+    color: $cgray;
+}
 
  @import '../modules/usercenter/myShop';
 

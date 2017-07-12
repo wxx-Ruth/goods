@@ -4,6 +4,14 @@
 @import '../modules/login/blackTop';
 @import '../modules/bottom';
 
+.input-list{
+    .txt-warn {
+        color: #f02525;
+        margin-left: 120px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+}
 .login-bg{
     background: url(../images/login-bg.jpg) 32px 45px no-repeat;
     height: 744px;
@@ -125,4 +133,7 @@
             color: $cgray;
         }
     }
+}
+.supplier-bg{
+    background-image: url(../images/supplier-login-bg.jpg);
 }
