@@ -50,6 +50,7 @@
     background-color: #3094f9;
     background-image:-webkit-linear-gradient(to right, #3094f9, #237ff8);
     background-image:linear-gradient(to right,#3094f9, #237ff8);
+    padding-top: 80px;
 }
 .mod-gray-light{
     background-color: #f4f4f4;
@@ -58,7 +59,7 @@
     background-color: #ddedfc;
 }
 .mod-price-bg{
-    background: url(../images/product-04.jpg) center center no-repeat;
+    background: url(../images/product-04.png) center center no-repeat;
 }
 .product-intro01{
     background: url(../images/product-01.png) 440px 15px no-repeat;
@@ -218,7 +219,7 @@
     }
 }
 .product-intro05{
-    height: 628px;
+    height: 586px;
     .intro{
         margin: 0 118px;
     }
@@ -273,7 +274,9 @@
     text-align: center;
     font-size: 18px;
     padding-bottom: 65px;
-    margin-top: 28px;
+    .title{
+        margin-bottom: 28px;
+    }
     p{
         margin-bottom: 18px;
     }
@@ -291,7 +294,7 @@
     z-index: 10;
     .topbar-item{
         color: #101010;
-        &:hover, &.acitve{
+        &:hover, &.active{
             color: #1a81d0;
         }
     }
